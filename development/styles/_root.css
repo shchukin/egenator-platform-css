@@ -1,8 +1,24 @@
 /* stylelint-disable declaration-colon-space-after */
 :root {
 
-    --font_family_default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font_family_heading: Georgia, Times, "Times New Roman", serif;
+    --font-default: "Inter", sans-serif;
+    --font-heading: Georgia, Times, "Times New Roman", serif;
+    --image-fallback: #CCCCCC;
+    --black: #111111;
+    --black-40pct: #999999;
+    --black-hover: rgba(17, 17, 17, 0.8);
+    --black-disabled-background: rgba(17, 17, 17, 0.08);
+    --black-disabled-text: rgba(17, 17, 17, 0.32);
+    --panel-hover: #F7F7F7;
+    --panel-active: #F4F4F4;
 
+    --caption-font: 12px;
+    --caption-line: 18px;
+
+    --headline-1-font: 18px;
+    --headline-1-line: 26px;
+
+    --headline-2-font: 20px;
+    --headline-2-line: 28px;
 }
 /* stylelint-enable declaration-colon-space-after */

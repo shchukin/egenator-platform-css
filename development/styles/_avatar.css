@@ -1,0 +1,66 @@
+.avatar {
+    position: relative;
+    display: inline-flex; /* inline-block could be enough but that one inherit line-height for images smaller than 24px */
+    vertical-align: top;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0); /* make transition works in safari: https://stackoverflow.com/questions/48470833/overflow-not-hidden-while-css-animation-in-safari */
+}
+    .avatar__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+    }
+
+
+.avatar:not(.avatar--non-clickable):hover {
+
+}
+    .user-card:hover .avatar__image,
+    .avatar:not(.avatar--non-clickable):hover .avatar__image {
+        transform: scale(1.05);
+    }
+
+    .avatar:not(.avatar--non-clickable):hover .dummy {
+        transform: none;
+        background-color: #545454;
+    }
+
+
+.avatar--squared {
+    border-radius: 10px;
+}
+
+.avatar--a-bit-squared {
+    border-radius: 6px;
+}
+
+.avatar--less-squared {
+    border-radius: 4px;
+}
+
+
+.avatar--alt-hover {
+    background-color: #FFFFFF; /* half white on hover */
+}
+    .avatar--alt-hover .avatar__image {
+        transform: none !important;
+    }
+
+    .profile-button:hover .avatar__image,
+    .avatar--alt-hover:hover .avatar__image {
+        opacity: 0.7; /* half white on hover */
+    }
+
+    .avatar--alt-hover .dummy {
+        opacity: 1 !important;
+    }
+
+.avatar--non-clickable {
+    cursor: inherit;
+}
+

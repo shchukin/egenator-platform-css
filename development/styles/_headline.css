@@ -1,0 +1,14 @@
+.headline {
+    font-family: var(--font-heading);
+    font-weight: normal;
+}
+
+.headline--1 {
+    font-size: var(--headline-1-font);
+    line-height: var(--headline-1-line);
+}
+
+.headline--2 {
+    font-size: var(--headline-2-font);
+    line-height: var(--headline-2-line);
+}
