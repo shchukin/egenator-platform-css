@@ -45,3 +45,14 @@
             .room__item {
 
             }
+
+
+.room--collapsed {
+
+}
+    .room--collapsed .room__handler::after {
+        transform: scaleY(-1);
+    }
+    .room--collapsed .room__body {
+        display: none;
+    }
