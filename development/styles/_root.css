@@ -2,7 +2,7 @@
 :root {
 
     --font-default: "Inter", sans-serif;
-    --font-heading: Georgia, Times, "Times New Roman", serif;
+    --font-heading: "RF Dewi Extended";
     --image-fallback: #CCCCCC;
     --black: #111111;
     --black-40pct: #999999;
@@ -24,5 +24,7 @@
 
     --headline-2-font: 20px;
     --headline-2-line: 28px;
+
+    --ultrabold: 800;
 }
 /* stylelint-enable declaration-colon-space-after */

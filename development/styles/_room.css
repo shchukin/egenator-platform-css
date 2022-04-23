@@ -1,11 +1,40 @@
 .room {
+    width: 100%;
     border: 2px solid #A8D741;
+    padding: 16px 12px 14px;
     border-radius: 16px;
-    padding: 24px;
 }
     .room__handler {
-
+        position: relative;
+        padding: 4px 24px 8px 12px;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        text-align: left;
     }
+
+    .room__handler:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .room__handler:active {
+        background-color: var(--panel-active);
+    }
+
+        .room__handler::after {
+            content: "";
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            width: 16px;
+            height: 16px;
+            background-image: url("../vectors/dropdown.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
 
     .room__body {
 

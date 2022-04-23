@@ -17,50 +17,14 @@
     }
 
 
-.avatar:not(.avatar--non-clickable):hover {
-
-}
-    .user-card:hover .avatar__image,
-    .avatar:not(.avatar--non-clickable):hover .avatar__image {
-        transform: scale(1.05);
-    }
-
-    .avatar:not(.avatar--non-clickable):hover .dummy {
-        transform: none;
-        background-color: #545454;
-    }
-
-
-.avatar--squared {
-    border-radius: 10px;
-}
-
-.avatar--a-bit-squared {
-    border-radius: 6px;
-}
-
-.avatar--less-squared {
-    border-radius: 4px;
-}
-
-
-.avatar--alt-hover {
+.avatar--clickable {
     background-color: #FFFFFF; /* half white on hover */
 }
-    .avatar--alt-hover .avatar__image {
-        transform: none !important;
-    }
-
-    .profile-button:hover .avatar__image,
-    .avatar--alt-hover:hover .avatar__image {
+    .avatar--clickable:hover .avatar__image {
         opacity: 0.7; /* half white on hover */
     }
 
-    .avatar--alt-hover .dummy {
-        opacity: 1 !important;
-    }
-
-.avatar--non-clickable {
-    cursor: inherit;
-}
+    /*.avatar--clickable .dummy {*/
+    /*    opacity: 1 !important;*/
+    /*}*/
 

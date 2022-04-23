@@ -1,11 +1,22 @@
 .student {
     position: relative;
-    padding-left: 48px;
+    display: block;
+    padding: 8px 12px 8px 70px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.student--clickable:hover {
+    background-color: var(--panel-hover);
+}
+
+.student--clickable:active {
+    background-color: var(--panel-active);
 }
     .student__preview {
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 10px;
+        top: 6px;
         width: 46px;
         height: 46px;
     }

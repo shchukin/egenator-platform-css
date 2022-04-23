@@ -4,8 +4,7 @@
     border-radius: 16px;
 }
     .course-card__prefix {
-        font-size: var(--caption-font);
-        line-height: var(--caption-line);
+
     }
 
     .course-card__heading {
