@@ -1,6 +1,6 @@
 .room {
     width: 100%;
-    border: 2px solid #A8D741;
+    border: 2px solid #FAD03C;
     padding: 16px 12px 14px;
     border-radius: 16px;
 }
@@ -22,7 +22,6 @@
     .room__handler:active {
         background-color: var(--panel-active);
     }
-
         .room__handler::after {
             content: "";
             position: absolute;
@@ -39,6 +38,10 @@
     .room__body {
 
     }
-        .room__item {
-
+        .room__scroll {
+            max-height: 350px;
+            overflow-y: auto;
         }
+            .room__item {
+
+            }

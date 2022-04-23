@@ -4,11 +4,9 @@
     vertical-align: top;
     padding: 0;
     border: none;
-    background-color: transparent;
+    background-color: var(--image-fallback);
     border-radius: 50%;
     overflow: hidden;
-    cursor: pointer;
-    -webkit-transform: translate3d(0, 0, 0); /* make transition works in safari: https://stackoverflow.com/questions/48470833/overflow-not-hidden-while-css-animation-in-safari */
 }
     .avatar__image {
         vertical-align: top;
@@ -19,12 +17,9 @@
 
 .avatar--clickable {
     background-color: #FFFFFF; /* half white on hover */
+    cursor: pointer;
 }
     .avatar--clickable:hover .avatar__image {
         opacity: 0.7; /* half white on hover */
     }
-
-    /*.avatar--clickable .dummy {*/
-    /*    opacity: 1 !important;*/
-    /*}*/
 

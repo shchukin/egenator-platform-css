@@ -18,7 +18,7 @@
             <h1>.avatar</h1>
 
 
-            <a class="avatar">
+            <div class="avatar">
                 <img class="avatar__image"
                      srcset="../temp/person-f-48x48@2x.jpg 2x"
                      src="../temp/person-f-48x48.jpg"
@@ -26,7 +26,7 @@
                      height="48"
                      alt="Tim Cook"
                 >
-            </a>
+            </div>
 
 
             <br>
@@ -34,7 +34,7 @@
             <br>
             <h2>.avatar--clickable</h2>
 
-            <a class="avatar avatar--clickable">
+            <a class="avatar avatar--clickable" href="#">
                 <img class="avatar__image"
                      srcset="../temp/person-f-48x48@2x.jpg 2x"
                      src="../temp/person-f-48x48.jpg"
@@ -54,7 +54,7 @@
             </p>
 
             <a class="avatar avatar--clickable">
-                <svg width="48" height="48" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="avatar__image" width="48" height="48" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <radialGradient id="gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(101.083 10.817 13.884) scale(39.1255 54.4956)">
                             <stop offset=".04" stop-color="#E8E782"/>
@@ -81,11 +81,14 @@
         </div>
 
 
-        <!-- jQuery -->
+        <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../scripts/_global.js"></script>
         <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
 
 
     </body>
