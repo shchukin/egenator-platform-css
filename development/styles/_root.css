@@ -11,6 +11,10 @@
     --black-disabled-text: rgba(17, 17, 17, 0.32);
     --panel-hover: #F7F7F7;
     --panel-active: #F4F4F4;
+    --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
+
+    --body2-font: 16px;
+    --body2-line: 24px;
 
     --caption-font: 12px;
     --caption-line: 18px;

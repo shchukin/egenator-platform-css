@@ -1,0 +1,4 @@
+.caption {
+    font-size: var(--caption-font);
+    line-height: var(--caption-line);
+}

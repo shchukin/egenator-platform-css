@@ -1,0 +1,49 @@
+.student {
+    position: relative;
+    padding-left: 48px;
+}
+    .student__preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 46px;
+        height: 46px;
+    }
+        .student__progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .student__photo {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+        }
+
+        .student__counter {
+            position: absolute;
+            left: 29px;
+            top: 29px;
+            width: 16px;
+            height: 16px;
+            background-color: var(--black);
+            border-radius: 50%;
+            font-size: 9px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            pointer-events: none;
+        }
+
+    .student__heading {
+        font-size: var(--body2-font);
+        line-height: var(--body2-line);
+        color: var(--black);
+    }
+
+    .student__note {
+        font-size: var(--caption-font);
+        line-height: var(--caption-line);
+        color: var(--black-40pct);
+    }

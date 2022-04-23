@@ -1,0 +1,18 @@
+.instructor-card {
+    padding: 26px 22px 30px;
+    border: 2px solid #FAD03D;
+    border-radius: 16px;
+}
+    .instructor-card__preview {
+
+    }
+
+    .instructor-card__post {
+        margin-top: 15px;
+        font-size: var(--caption-font);
+        line-height: var(--caption-line);
+    }
+
+    .instructor-card__name {
+        margin-top: 6px;
+    }

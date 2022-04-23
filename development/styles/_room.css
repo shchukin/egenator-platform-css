@@ -1,0 +1,15 @@
+.room {
+    border: 2px solid #A8D741;
+    border-radius: 16px;
+    padding: 24px;
+}
+    .room__handler {
+
+    }
+
+    .room__body {
+
+    }
+        .room__item {
+
+        }

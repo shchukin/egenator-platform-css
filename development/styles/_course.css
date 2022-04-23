@@ -9,3 +9,14 @@
     .course__sidebar {
 
     }
+        .course__card {
+
+        }
+
+        .course__teacher {
+            margin-top: 16px;
+        }
+
+        .course__students {
+            margin-top: 16px;
+        }
