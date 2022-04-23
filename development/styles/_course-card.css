@@ -1,0 +1,17 @@
+.course-card {
+    padding: 24px;
+    background-color: #A8D741;
+    border-radius: 16px;
+}
+    .course-card__prefix {
+        font-size: var(--caption-font);
+        line-height: var(--caption-line);
+    }
+
+    .course-card__heading {
+        margin-top: 2px;
+    }
+
+    .course-card__more {
+        margin-top: 21px;
+    }

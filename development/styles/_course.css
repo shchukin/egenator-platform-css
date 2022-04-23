@@ -1,0 +1,11 @@
+.course {
+    display: grid;
+    grid-template-columns: 500px 307px;
+}
+    .course__content {
+
+    }
+
+    .course__sidebar {
+
+    }
