@@ -11,3 +11,8 @@
     color: inherit;
     text-decoration: none;
 }
+
+.next:hover {
+    color: var(--light-green);
+    background-image: url("../vectors/next-hover.svg");
+}
