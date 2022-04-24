@@ -1,22 +1,50 @@
 .course {
-    display: grid;
-    grid-template-columns: 500px 307px;
+    padding-top: 32px;
+    padding-bottom: 64px;
 }
-    .course__content {
-
+    .course__body {
+        display: grid;
+        grid-template-columns: 860fr 307fr;
+        grid-gap: 32px;
     }
 
-    .course__sidebar {
+    @media (min-width: 1240px) {
+        .course__body {
+            grid-template-columns: 860px 307px;
+            justify-content: space-between;
+        }
+    }
+
+    .course__sign {
+        margin-bottom: 7px;
+    }
+
+    .course__body {
 
     }
-        .course__card {
+        .course__content {
 
         }
+            .course__heading {
+                margin-top: -2px;
+                margin-bottom: 0;
+            }
 
-        .course__teacher {
-            margin-top: 16px;
-        }
+            .course__nav {
+                margin-top: 23px;
+            }
 
-        .course__students {
-            margin-top: 16px;
+        .course__sidebar {
+
         }
+            .course__card {
+
+            }
+
+            .course__teacher {
+                margin-top: 16px;
+            }
+
+            .course__students {
+                margin-top: 16px;
+            }

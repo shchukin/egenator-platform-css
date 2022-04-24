@@ -5,6 +5,7 @@
     --font-heading: "RF Dewi Extended";
     --image-fallback: #CCCCCC;
     --black: #111111;
+    --black-8pct: #EBEAE7;
     --black-40pct: #999999;
     --black-hover: rgba(17, 17, 17, 0.8);
     --black-disabled-background: rgba(17, 17, 17, 0.08);
@@ -26,5 +27,8 @@
     --headline-2-line: 28px;
 
     --ultrabold: 800;
+
+    --light-green: #A8D741;
+    --light-green-40pct: #DDEFB6;
 }
 /* stylelint-enable declaration-colon-space-after */
