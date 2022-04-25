@@ -64,3 +64,104 @@
                     background-color: var(--black);
                 }
 }
+
+
+@media (max-width: 639px) {
+
+    .accordion {
+        border: 1px solid var(--black);
+        border-radius: 8px;
+    }
+        .accordion__handler {
+            position: relative;
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            padding: 14px 56px 16px 24px;
+            border: none;
+            font-family: var(--font-heading);
+            font-weight: var(--ultrabold);
+            font-size: var(--buttons-default-font);
+            line-height: var(--buttons-default-line);
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+            .accordion__handler::after {
+                content: "";
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                margin-top: -10px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url("../vectors/dropdown.svg");
+                background-size: 24px 24px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+        .accordion__list {
+            position: relative;
+            padding-top: 14px;
+            padding-bottom: 20px;
+            display: none;
+        }
+            .accordion__list::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 24px;
+                right: 24px;
+                top: 0;
+                height: 1px;
+                background-color: var(--beige-4-active);
+            }
+
+            .accordion__link {
+                display: block;
+                width: 100%;
+                background-color: transparent;
+                padding: 10px 24px;
+                border: none;
+                font-family: var(--font-heading);
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: inherit;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+                .accordion__link::after {
+
+                }
+
+            .accordion__link:hover {
+
+            }
+                .accordion__link:hover::after {
+
+                }
+
+            .accordion__link--current,
+            .accordion__link--current:hover {
+                font-weight: var(--ultrabold);
+            }
+                .accordion__link--current::after,
+                .accordion__link--current:hover::after {
+
+                }
+
+    .accordion--expanded {
+
+    }
+        .accordion--expanded .accordion__handler::after {
+            transform: scaleY(-1);
+        }
+
+    .accordion--expanded .accordion__list {
+        display: block;
+    }
+}

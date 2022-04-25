@@ -13,7 +13,7 @@
 @media (max-width: 639px) {
 
     .course-overview {
-
+        padding-top: 14px;
     }
         .course-overview__section {
             margin-top: 0;

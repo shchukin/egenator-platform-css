@@ -2,6 +2,10 @@
     padding-top: 32px;
     padding-bottom: 64px;
 }
+
+    .course__sign {
+        margin-bottom: 7px;
+    }
     .course__body {
         display: grid;
         grid-template-columns: 860fr 307fr;
@@ -13,14 +17,6 @@
             grid-template-columns: 860px 307px;
             justify-content: space-between;
         }
-    }
-
-    .course__sign {
-        margin-bottom: 7px;
-    }
-
-    .course__body {
-
     }
         .course__content {
 
@@ -48,3 +44,51 @@
             .course__students {
                 margin-top: 16px;
             }
+
+
+@media (max-width: 639px) {
+
+    .course {
+        /*padding-top: 32px;*/
+        /*padding-bottom: 64px;*/
+    }
+        .course__body {
+            display: block;
+            /*grid-template-columns: 860fr 307fr;*/
+            /*grid-gap: 32px;*/
+        }
+
+        .course__sign {
+            /*margin-bottom: 7px;*/
+        }
+
+        .course__body {
+
+        }
+            .course__content {
+
+            }
+                .course__heading {
+                    /*margin-top: -2px;*/
+                    /*margin-bottom: 0;*/
+                }
+
+                .course__nav {
+                    margin-top: 33px;
+                }
+
+            .course__sidebar {
+                margin-top: 48px;
+            }
+                .course__card {
+
+                }
+
+                .course__teacher {
+                    /*margin-top: 16px;*/
+                }
+
+                .course__students {
+                    /*margin-top: 16px;*/
+                }
+}
