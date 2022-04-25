@@ -85,6 +85,7 @@
             line-height: var(--buttons-default-line);
             color: inherit;
             text-decoration: none;
+            text-align: left;
             cursor: pointer;
         }
             .accordion__handler::after {

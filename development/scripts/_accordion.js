@@ -9,6 +9,6 @@
             $('.accordion').removeClass('accordion--expanded');
         }
     });
-    
+
 
 })(jQuery);
