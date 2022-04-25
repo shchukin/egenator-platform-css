@@ -1,0 +1,25 @@
+.course-overview {
+    padding-top: 22px;
+}
+    .course-overview__section {
+        margin-top: 16px;
+    }
+
+    .course-overview__section:first-child {
+        margin-top: 0;
+    }
+
+
+@media (max-width: 639px) {
+
+    .course-overview {
+
+    }
+        .course-overview__section {
+            margin-top: 0;
+            border-bottom: 1px solid var(--beige-4-active);
+            padding-top: 14px;
+            padding-bottom: 18px;
+        }
+}
+

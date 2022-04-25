@@ -17,6 +17,9 @@
     --body2-font: 16px;
     --body2-line: 24px;
 
+    --body2-font-mobile: 18px;
+    --body2-line-mobile: 26px;
+
     --caption-font: 12px;
     --caption-line: 18px;
 
@@ -30,5 +33,7 @@
 
     --light-green: #A8D741;
     --light-green-40pct: #DDEFB6;
+
+    --beige-4-active: #EEEBDF;
 }
 /* stylelint-enable declaration-colon-space-after */
