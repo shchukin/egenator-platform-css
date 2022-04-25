@@ -16,7 +16,8 @@
 .wysiwyg ol,
 .wysiwyg hr,
 .wysiwyg figure,
-.wysiwyg blockquote {
+.wysiwyg blockquote,
+.wysiwyg .video {
     margin-top: var(--body2-line);
     margin-bottom: var(--body2-line);
 }
@@ -28,7 +29,8 @@
     .wysiwyg ol,
     .wysiwyg hr,
     .wysiwyg figure,
-    .wysiwyg blockquote {
+    .wysiwyg blockquote,
+    .wysiwyg .video {
         margin-top: var(--body2-line-mobile);
         margin-bottom: var(--body2-line-mobile);
     }
@@ -40,7 +42,8 @@
 .wysiwyg ol:first-child,
 .wysiwyg hr:first-child,
 .wysiwyg figure:first-child,
-.wysiwyg blockquote:first-child {
+.wysiwyg blockquote:first-child,
+.wysiwyg .video:first-child {
     margin-top: 0;
 }
 
@@ -49,7 +52,8 @@
 .wysiwyg ol:last-child,
 .wysiwyg hr:last-child,
 .wysiwyg figure:last-child,
-.wysiwyg blockquote:last-child {
+.wysiwyg blockquote:last-child,
+.wysiwyg .video:last-child {
     margin-bottom: 0;
 }
 
