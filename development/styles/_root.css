@@ -6,6 +6,7 @@
     --image-fallback: #CCCCCC;
     --black: #111111;
     --black-8pct: #EBEAE7;
+    --black-32pct: #ADADAB;
     --black-40pct: #999999;
     --black-hover: rgba(17, 17, 17, 0.8);
     --black-disabled-background: rgba(17, 17, 17, 0.08);
@@ -14,6 +15,9 @@
     --panel-active: #F4F4F4;
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
     --container-padding-mobile: 24px;
+
+    --body1-font: 14px;
+    --body1-line: 22px;
 
     --body2-font: 16px;
     --body2-line: 24px;
