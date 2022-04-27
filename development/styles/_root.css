@@ -13,6 +13,7 @@
     --panel-hover: #F7F7F7;
     --panel-active: #F4F4F4;
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
+    --container-padding-mobile: 24px;
 
     --body2-font: 16px;
     --body2-line: 24px;
@@ -38,5 +39,6 @@
     --light-green-40pct: #DDEFB6;
 
     --beige-4-active: #EEEBDF;
+    --beige-5-current: #FFF7CB;
 }
 /* stylelint-enable declaration-colon-space-after */

@@ -36,7 +36,6 @@
                 text-align: center;
                 text-decoration: none;
             }
-
                 .accordion__link::after {
                     content: "";
                     position: absolute;

@@ -34,48 +34,205 @@
                         </h1>
                         <div class="course__nav accordion">
                             <button class="accordion__handler" type="button">
-                                Обзор курса
+                                Расписание
                             </button>
                             <nav class="accordion__list">
-                                <a class="accordion__link accordion__link--current" href="course-overview.html">Обзор курса</a>
-                                <a class="accordion__link" href="course-schedule.html">Расписание</a>
+                                <a class="accordion__link" href="course-overview.html">Обзор курса</a>
+                                <a class="accordion__link accordion__link--current" href="course-schedule.html">Расписание</a>
                                 <a class="accordion__link" href="course-materials.html">Материалы</a>
                                 <a class="accordion__link" href="course-progress.html">Прогресс</a>
                             </nav>
                         </div>
                         <div class="course__pages">
                             <!-- Внутренняя страница курса -->
-                            <div class="course-overview">
-                                <div class="course-overview__section mobile-collapse">
-                                    <button class="mobile-collapse__handler" type="button">
-                                        Описание курса
-                                    </button>
-                                    <div class="mobile-collapse__body">
-                                        <div class="wysiwyg">
-                                            <p>Добро пожаловать! Все задачи 1 части + 13, 15, 17 + знакомство с параметрами. Все, чтобы сдать на 80 баллов. Теория, практика, ДЗ, репетиционные ЕГЭ!</p>
-                                            <div class="video video--16x9">
-                                                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+                            <div class="schedule">
+                                <h1 class="schedule__heading title title--h6">
+                                    Расписание
+                                </h1>
+                                <div class="schedule__body">
+                                    <div class="schedule__item">
+                                        <button class="schedule__handler" type="button">
+                                            Неделя 1
+                                        </button>
+                                        <div class="schedule__dropdown">
+                                            <div class="schedule__inner">
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Планиметрия. Часть 1.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Текстовые задачи: движение и работа, проценты, сплавы, смеси.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="course-overview__section mobile-collapse">
-                                    <button class="mobile-collapse__handler" type="button">
-                                        О процессе обучения
-                                    </button>
-                                    <div class="mobile-collapse__body">
-                                        <div class="wysiwyg">
-                                            <p>Все материалы и занятия проходят в нашей образовательной платформе. Посмотрите видео или зарегистрируйтесь, чтобы посмотреть, как устроена платформа.</p>
+                                    <div class="schedule__item">
+                                        <button class="schedule__handler" type="button">
+                                            Неделя 2
+                                        </button>
+                                        <div class="schedule__dropdown">
+                                            <div class="schedule__inner">
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Планиметрия. Часть 1.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Текстовые задачи: движение и работа, проценты, сплавы, смеси.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="course-overview__section mobile-collapse">
-                                    <button class="mobile-collapse__handler" type="button">
-                                        Необходимые материалы
-                                    </button>
-                                    <div class="mobile-collapse__body">
-                                        <div class="wysiwyg">
-                                            <p>Покупка дополнительных материалов не предусмотрена</p>
+                                    <div class="schedule__item schedule__item--current">
+                                        <button class="schedule__handler" type="button">
+                                            Неделя 3 (текущая)
+                                        </button>
+                                        <div class="schedule__dropdown">
+                                            <div class="schedule__inner">
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Планиметрия. Часть 1.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Текстовые задачи: движение и работа, проценты, сплавы, смеси.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule__item">
+                                        <button class="schedule__handler" type="button">
+                                            Неделя 4
+                                        </button>
+                                        <div class="schedule__dropdown">
+                                            <div class="schedule__inner">
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Планиметрия. Часть 1.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Текстовые задачи: движение и работа, проценты, сплавы, смеси.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule__item">
+                                        <button class="schedule__handler" type="button">
+                                            Неделя 5
+                                        </button>
+                                        <div class="schedule__dropdown">
+                                            <div class="schedule__inner">
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Планиметрия. Часть 1.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                                <div class="schedule__entry">
+                                                    <div class="schedule__timing">
+                                                        <div class="schedule__date">
+                                                            25 сен (сб)
+                                                        </div>
+                                                        <div class="schedule__time">
+                                                            17:00-19:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule__content">
+                                                        <div class="schedule__row">Текстовые задачи: движение и работа, проценты, сплавы, смеси.</div>
+                                                        <div class="schedule__row">Домашнее задание</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
