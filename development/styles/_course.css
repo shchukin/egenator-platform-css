@@ -3,7 +3,7 @@
     padding-bottom: 64px;
 }
 
-    .course__sign {
+    .course__breadcrumbs {
         margin-bottom: 7px;
     }
     .course__body {
@@ -58,7 +58,7 @@
             /*grid-gap: 32px;*/
         }
 
-        .course__sign {
+        .course__breadcrumbs {
             /*margin-bottom: 7px;*/
         }
 
