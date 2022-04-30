@@ -24,7 +24,7 @@
 
         <div class="container">
             <div class="course">
-                <a class="course__sign next" href="#">
+                <a class="course__breadcrumbs next" href="#">
                     Все онлайн-занятия
                 </a>
                 <div class="course__body">
@@ -34,48 +34,182 @@
                         </h1>
                         <div class="course__nav accordion">
                             <button class="accordion__handler" type="button">
-                                Обзор курса
+                                Прогресс
                             </button>
                             <nav class="accordion__list">
-                                <a class="accordion__link accordion__link--current" href="course-overview.html">Обзор курса</a>
-                                <a class="accordion__link" href="course-schedule.html">Расписание</a>
+                                <a class="accordion__link" href="course-overview.html">Обзор курса</a>
+                                <a class="accordion__link" href="course-progress.html">Расписание</a>
                                 <a class="accordion__link" href="course-materials.html">Материалы</a>
-                                <a class="accordion__link" href="course-progress.html">Прогресс</a>
+                                <a class="accordion__link accordion__link--current" href="course-progress.html">Прогресс</a>
                             </nav>
                         </div>
                         <div class="course__pages">
                             <!-- Внутренняя страница курса -->
-                            <div class="course-overview">
-                                <div class="course-overview__section mobile-collapse">
-                                    <button class="mobile-collapse__handler" type="button">
-                                        Описание курса
-                                    </button>
-                                    <div class="mobile-collapse__body">
-                                        <div class="wysiwyg">
-                                            <p>Добро пожаловать! Все задачи 1 части + 13, 15, 17 + знакомство с параметрами. Все, чтобы сдать на 80 баллов. Теория, практика, ДЗ, репетиционные ЕГЭ!</p>
-                                            <div class="video video--16x9">
-                                                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" allowfullscreen></iframe>
+                            <div class="progress">
+                                <h1 class="progress__heading title title--h6">
+                                    Расписание
+                                </h1>
+                                <div class="progress__body">
+                                    <div class="progress__item">
+                                        <button class="progress__handler" type="button">
+                                            Неделя 1
+                                            <div class="progress__addition">
+                                                <div class="progress__quantity">88 из 99</div>
+                                                <div class="progress__percentage">(90%)</div>
+                                            </div>
+                                        </button>
+                                        <div class="progress__dropdown">
+                                            <div class="progress__inner">
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">9 из 10</div>
+                                                        <div class="progress__percentage">(90%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Дополнительное задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">8 из 12</div>
+                                                        <div class="progress__percentage">(67%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">0</div>
+                                                        <div class="progress__percentage">(0%)</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="course-overview__section mobile-collapse">
-                                    <button class="mobile-collapse__handler" type="button">
-                                        О процессе обучения
-                                    </button>
-                                    <div class="mobile-collapse__body">
-                                        <div class="wysiwyg">
-                                            <p>Все материалы и занятия проходят в нашей образовательной платформе. Посмотрите видео или зарегистрируйтесь, чтобы посмотреть, как устроена платформа.</p>
+                                    <div class="progress__item">
+                                        <button class="progress__handler" type="button">
+                                            Неделя 2
+                                            <div class="progress__addition">
+                                                <div class="progress__quantity">88 из 99</div>
+                                                <div class="progress__percentage">(90%)</div>
+                                            </div>
+                                        </button>
+                                        <div class="progress__dropdown">
+                                            <div class="progress__inner">
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">9 из 10</div>
+                                                        <div class="progress__percentage">(90%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Дополнительное задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">8 из 12</div>
+                                                        <div class="progress__percentage">(67%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">0</div>
+                                                        <div class="progress__percentage">(0%)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="course-overview__section mobile-collapse">
-                                    <button class="mobile-collapse__handler" type="button">
-                                        Необходимые материалы
-                                    </button>
-                                    <div class="mobile-collapse__body">
-                                        <div class="wysiwyg">
-                                            <p>Покупка дополнительных материалов не предусмотрена</p>
+                                    <div class="progress__item progress__item--current">
+                                        <button class="progress__handler" type="button">
+                                            Неделя 3
+                                            <div class="progress__addition">
+                                                <div class="progress__quantity">88 из 99</div>
+                                                <div class="progress__percentage">(90%)</div>
+                                            </div>
+                                        </button>
+                                        <div class="progress__dropdown">
+                                            <div class="progress__inner">
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">9 из 10</div>
+                                                        <div class="progress__percentage">(90%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Дополнительное задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">8 из 12</div>
+                                                        <div class="progress__percentage">(67%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">0</div>
+                                                        <div class="progress__percentage">(0%)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress__item">
+                                        <button class="progress__handler" type="button">
+                                            Неделя 4
+                                        </button>
+                                        <div class="progress__dropdown">
+                                            <div class="progress__inner">
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">9 из 10</div>
+                                                        <div class="progress__percentage">(90%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Дополнительное задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">8 из 12</div>
+                                                        <div class="progress__percentage">(67%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">0</div>
+                                                        <div class="progress__percentage">(0%)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress__item">
+                                        <button class="progress__handler" type="button">
+                                            Неделя 5
+                                        </button>
+                                        <div class="progress__dropdown">
+                                            <div class="progress__inner">
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">9 из 10</div>
+                                                        <div class="progress__percentage">(90%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Дополнительное задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">8 из 12</div>
+                                                        <div class="progress__percentage">(67%)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress__entry">
+                                                    <div class="progress__type">Домашнее задание</div>
+                                                    <div class="progress__addition">
+                                                        <div class="progress__quantity">0</div>
+                                                        <div class="progress__percentage">(0%)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -647,6 +781,7 @@
         <script src="../scripts/_mobile-collapse.js"></script>
         <script src="../scripts/_accordion.js"></script>
         <script src="../scripts/_schedule.js"></script>
+        <script src="../scripts/_progress.js"></script>
 
     </body>
 </html>
