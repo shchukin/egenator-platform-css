@@ -5,9 +5,10 @@
     --font-heading: "RF Dewi Extended";
     --image-fallback: #CCCCCC;
     --black: #111111;
-    --black-8pct: #EBEAE7;
-    --black-32pct: #ADADAB;
-    --black-40pct: #999999;
+    --black-8pct: rgba(0, 0, 0, 0.08);
+    --black-16pct: rgba(0, 0, 0, 0.16);
+    --black-32pct: rgba(0, 0, 0, 0.32);
+    --black-40pct: rgba(0, 0, 0, 0.4);
     --black-hover: rgba(17, 17, 17, 0.8);
     --black-disabled-background: rgba(17, 17, 17, 0.08);
     --black-disabled-text: rgba(17, 17, 17, 0.32);
@@ -41,6 +42,7 @@
 
     --light-green: #A8D741;
     --light-green-40pct: #DDEFB6;
+    --green-icons: #A8D741;
 
     --beige-2: #F8F6F0;
     --beige-4-active: #EEEBDF;

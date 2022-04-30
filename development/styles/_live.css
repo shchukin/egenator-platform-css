@@ -1,0 +1,109 @@
+.live {
+    padding-top: 23px;
+}
+    .live__head {
+        display: flex;
+        align-items: flex-start;
+    }
+        .live__badge {
+            display: inline-flex;
+            vertical-align: top;
+            padding: 4px 12px;
+            background-color: var(--green-icons);
+            border-radius: 15px;
+            font-size: var(--body1-font);
+            line-height: var(--body1-line);
+        }
+            .live__icon {
+                vertical-align: top;
+                margin-top: 5px;
+                margin-right: 8px;
+            }
+
+        .live__note {
+            margin-top: 4px;
+            margin-left: 16px;
+            font-size: var(--body2-font);
+            line-height: var(--body2-line);
+        }
+
+    .live__stage {
+        margin-top: 32px;
+    }
+
+    .live__sub-heading {
+        margin-top: 38px;
+        margin-bottom: 0;
+    }
+
+    .live__description {
+        margin-top: 16px;
+    }
+
+    .live__addition {
+        margin-top: 42px;
+    }
+        .live__task {
+            margin-top: 16px;
+        }
+
+        .live__task:first-child {
+            margin-top: 0;
+        }
+
+
+@media (max-width: 639px) {
+
+    .live {
+        /*padding-top: 23px;*/
+    }
+        .live__head {
+            display: block;
+            /*align-items: flex-start;*/
+        }
+            .live__badge {
+                /*display: inline-flex;*/
+                /*vertical-align: top;*/
+                /*padding: 4px 12px;*/
+                /*background-color: var(--green-icons);*/
+                /*border-radius: 15px;*/
+                /*font-size: var(--body1-font);*/
+                /*line-height: var(--body1-line);*/
+            }
+                .live__icon {
+                    /*vertical-align: top;*/
+                    /*margin-top: 5px;*/
+                    /*margin-right: 8px;*/
+                }
+
+            .live__note {
+                margin-top: 10px;
+                margin-left: 0;
+                /*font-size: var(--body2-font);*/
+                /*line-height: var(--body2-line);*/
+            }
+
+        .live__stage {
+            margin-top: 24px;
+        }
+
+        .live__sub-heading {
+            /*margin-top: 38px;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .live__description {
+            /*margin-top: 16px;*/
+        }
+
+        .live__addition {
+            /*margin-top: 42px;*/
+        }
+            .live__task {
+                /*margin-top: 16px;*/
+            }
+
+            .live__task:first-child {
+                /*margin-top: 0;*/
+            }
+}

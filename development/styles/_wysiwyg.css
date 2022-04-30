@@ -59,36 +59,36 @@
 
 
 .wysiwyg ul {
-    padding-left: 20px;
-    list-style: none;
+    padding-left: 24px;
+    /*list-style: none;*/
 }
-    .wysiwyg ul li {
-        position: relative;
-    }
-        .wysiwyg ul li::before {
-            position: absolute;
-            right: 100%;
-            margin-right: 5px;
-            top: 0;
-            content: "—";
-        }
+    /*.wysiwyg ul li {*/
+    /*    position: relative;*/
+    /*}*/
+    /*    .wysiwyg ul li::before {*/
+    /*        position: absolute;*/
+    /*        right: 100%;*/
+    /*        margin-right: 5px;*/
+    /*        top: 0;*/
+    /*        content: "—";*/
+    /*    }*/
 
 .wysiwyg ol {
-    counter-reset: wysiwyg-ordered-list;
+    /*counter-reset: wysiwyg-ordered-list;*/
     padding-left: 20px;
-    list-style: none;
+    /*list-style: none;*/
 }
-    .wysiwyg ol li {
-        counter-increment: wysiwyg-ordered-list;
-        position: relative;
-    }
-        .wysiwyg ol li::before {
-            content: counter(wysiwyg-ordered-list) ") ";
-            position: absolute;
-            right: 100%;
-            margin-right: 5px;
-            top: 0;
-        }
+    /*.wysiwyg ol li {*/
+    /*    counter-increment: wysiwyg-ordered-list;*/
+    /*    position: relative;*/
+    /*}*/
+    /*    .wysiwyg ol li::before {*/
+    /*        content: counter(wysiwyg-ordered-list) ") ";*/
+    /*        position: absolute;*/
+    /*        right: 100%;*/
+    /*        margin-right: 5px;*/
+    /*        top: 0;*/
+    /*    }*/
 
 
 .wysiwyg blockquote {
@@ -106,8 +106,8 @@
 }
 
 .wysiwyg figure {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
     .wysiwyg figcaption {
         margin-top: 4px;
