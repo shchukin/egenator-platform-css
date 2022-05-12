@@ -23,20 +23,22 @@
         margin-right: auto;
     }
         .homework__author {
-            position: absolute;
-            left: -68px;
-            top: 42px;
-        }
 
-        .homework__name {
-            font-size: var(--caption-font);
-            line-height: var(--caption-line);
         }
+            .homework__avatar {
+                position: absolute;
+                left: -72px;
+                top: 42px;
+            }
+
+            .homework__name {
+                font-size: var(--caption-font);
+                line-height: var(--caption-line);
+            }
 
         .homework__question {
-
+            margin-top: 13px;
         }
-
 
 
 
@@ -46,5 +48,48 @@
         /*padding-top: 32px;*/
         /*padding-bottom: 64px;*/
     }
+        .homework__head {
+            /*padding-bottom: 27px;*/
+            /*border-bottom: 1px solid var(--black);*/
+        }
+            .homework__breadcrumbs {
+                /*margin-bottom: 2px;*/
+            }
 
+            .homework__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+            }
+
+        .homework__body {
+            /*position: relative;*/
+            width: auto;
+            /*padding-top: 31px;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+        }
+            .homework__author {
+                position: static;
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+                grid-gap: 16px;
+            }
+                .homework__avatar {
+                    position: static;
+                    /*left: -68px;*/
+                    /*top: 42px;*/
+                }
+
+                .homework__name {
+                    /*font-size: var(--caption-font);*/
+                    /*line-height: var(--caption-line);*/
+                }
+
+            .homework__question {
+
+            }
 }
+
+

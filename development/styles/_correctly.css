@@ -1,6 +1,7 @@
 .correctly {
-    padding: 12px;
-    display: grid;
+    padding: 12px 12px 12px 0;
+    display: inline-grid;
+    vertical-align: top;
     grid-auto-flow: column;
 }
     .correctly__label {
