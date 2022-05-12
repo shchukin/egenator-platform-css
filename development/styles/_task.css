@@ -1,0 +1,90 @@
+.task {
+
+}
+    .task__question {
+        padding: 24px;
+        border: 1px solid var(--black-16pct);
+        border-radius: 8px;
+    }
+        .task__problem {
+            font-size: var(--body2-font);
+            line-height: var(--body2-line);
+        }
+
+        .task__answer {
+            margin-top: 24px;
+            padding: 40px 24px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            background-color: var(--beige-5-current);
+            border-radius: 8px;
+        }
+            .task__sub-heading {
+                margin-right: 16px;
+                margin-top: 13px;
+                font-size: var(--body2-font);
+                line-height: var(--body2-line);
+            }
+
+            .task__enter {
+                position: relative;
+            }
+                .task__field {
+
+                }
+                    .task__field .input__widget {
+                        padding-right: 114px;
+                    }
+
+                .task__validity {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+            .task__check {
+                margin-left: 16px;
+            }
+
+    .task__solution {
+        margin-top: 16px;
+        border: 1px solid var(--black-16pct);
+        border-radius: 8px;
+    }
+        .task__show-solution {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            background-color: transparent;
+            padding: 24px;
+            border-radius: 7px;
+            border: none;
+            font-size: var(--body2-font);
+            line-height: var(--body2-line);
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .task__show-solution:hover {
+            background-color: var(--panel-hover);
+        }
+
+        .task__show-solution:active {
+            background-color: var(--panel-active);
+        }
+
+        .task__explanation {
+            padding: 24px;
+            display: none;
+        }
+
+        .task--expanded .task__explanation {
+            display: block;
+        }
+
+    .task__footer {
+        text-align: right;
+    }
+        .task__next {
+            margin-top: 16px;
+        }

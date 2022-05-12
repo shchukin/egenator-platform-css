@@ -1,0 +1,15 @@
+.correctly {
+    padding: 12px;
+    display: grid;
+    grid-auto-flow: column;
+}
+    .correctly__label {
+        margin-top: 1px;
+        font-size: var(--body1-font);
+        line-height: var(--body1-line);
+    }
+
+    .correctly__icon {
+        vertical-align: top;
+        margin-left: 8px;
+    }
