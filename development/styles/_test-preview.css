@@ -1,0 +1,110 @@
+.test-preview {
+    position: relative;
+    height: 100%;
+}
+    .test-preview__link {
+        position: relative;
+        display: block;
+        min-height: 300px;
+        padding: 24px 24px 88px 24px;
+        text-decoration: none;
+        color: inherit;
+        box-shadow: inset 0 0 0 1px var(--black);
+        border-radius: 12px;
+    }
+
+    .test-preview:hover .test-preview__link {
+        background-color: var(--panel-hover);
+    }
+
+    .test-preview:active .test-preview__link {
+        background-color: var(--panel-active);
+    }
+        .test-preview__type {
+            font-size: var(--caption-font);
+            line-height: var(--caption-line);
+        }
+
+        .test-preview__heading {
+            margin-top: 12px;
+            margin-bottom: 0;
+            min-height: calc(2 * var(--headline-1-line));
+        }
+
+        .test-preview__handler {
+            margin-top: 18px;
+        }
+
+        .test-preview__footer {
+            position: absolute;
+            left: 24px;
+            right: 24px;
+            bottom: 22px;
+        }
+            .test-preview__note {
+
+            }
+
+            .test-preview__summary {
+                margin-top: 5px;
+                color: var(--black-32pct);
+            }
+
+        .test-preview__progress {
+            position: absolute;
+            right: 24px;
+            bottom: 24px;
+        }
+
+
+
+.test-preview--complete {
+
+}
+    .test-preview--complete .test-preview__link {
+        box-shadow: inset 0 0 0 1px var(--black-16pct);
+    }
+        .test-preview--complete .test-preview__type {
+            padding-right: 48px;
+        }
+
+        .test-preview__status {
+            position: absolute;
+            right: 24px;
+            top: 24px;
+        }
+
+
+.test-preview--disabled {
+
+}
+
+    .test-preview--disabled .test-preview__link,
+    .test-preview--disabled:hover .test-preview__link,
+    .test-preview--disabled:active .test-preview__link {
+        box-shadow: 0 0 0 1px var(--black-16pct);
+        background-color: transparent;
+        cursor: default;
+    }
+        .test-preview--disabled .test-preview__type {
+            color: var(--black-32pct);
+        }
+
+        .test-preview--disabled .test-preview__heading {
+            color: var(--black-32pct);
+        }
+
+.test-preview--not-purchased {
+
+}
+
+    .test-preview--not-purchased .test-preview__link {
+        box-shadow: 0 0 0 1px var(--black-16pct);
+    }
+        .test-preview--not-purchased .test-preview__type {
+            color: var(--black-32pct);
+        }
+
+        .test-preview--not-purchased .test-preview__heading {
+            color: var(--black-32pct);
+        }

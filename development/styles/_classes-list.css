@@ -26,7 +26,7 @@
         .classes-list__listing {
             margin-top: 32px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 24px;
         }
             .classes-list__item {

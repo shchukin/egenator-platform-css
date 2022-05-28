@@ -165,3 +165,45 @@
         display: block;
     }
 }
+
+
+
+
+
+.accordion--vertical {
+
+}
+
+@media (min-width: 640px) {
+
+    .accordion {
+
+    }
+        .accordion__handler {
+
+        }
+
+        .accordion__list {
+            display: block;
+        }
+            .accordion__link {
+                display: block;
+                border-bottom: 1px solid var(--black-8pct);
+                text-align: left;
+                font-family: var(--font-heading);
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            .accordion__link:last-child {
+                border-bottom: none;
+            }
+                .accordion__link::after {
+                    display: none;
+                }
+
+            .accordion__link--current {
+                border-bottom-color: var(--black);
+            }
+
+}

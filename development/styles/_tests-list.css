@@ -1,0 +1,64 @@
+.tests-list {
+    padding-top: 54px;
+    padding-bottom: 50px;
+}
+    .tests-list__head {
+        position: relative;
+    }
+        .tests-list__heading {
+
+        }
+
+    .tests-list__body {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 23.5791%;
+        grid-gap: 24px;
+    }
+        .tests-list__listing {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-gap: 24px;
+        }
+
+        .tests-list__sidebar {
+
+        }
+            .tests-list__nav {
+
+            }
+
+
+@media (max-width: 639px) {
+
+
+    .tests-list {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+        .tests-list__section {
+
+        }
+            .tests-list__head {
+
+            }
+                .tests-list__sub-heading {
+
+                }
+
+            .tests-list__body {
+                margin-top: 24px;
+                display: grid;
+                grid-template-columns: none;
+                grid-gap: 32px;
+            }
+                .tests-list__listing {
+                    display: grid;
+                    grid-template-columns: none;
+                    grid-gap: 16px;
+                }
+
+                .tests-list__sidebar {
+                    order: -1;
+                }
+}
