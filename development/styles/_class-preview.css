@@ -2,7 +2,7 @@
     position: relative;
     height: 100%;
 }
-    .classes-list__link {
+    .class-preview__link {
         display: block;
         padding: 24px 88px 116px 24px;
         height: 100%;
@@ -12,11 +12,11 @@
         border-radius: 16px;
     }
 
-    .class-preview:hover .classes-list__link {
+    .class-preview:hover .class-preview__link {
         background-color: var(--panel-hover);
     }
 
-    .class-preview:hover .classes-list__link {
+    .class-preview:hover .class-preview__link {
         background-color: var(--panel-active);
     }
 
@@ -43,13 +43,13 @@
         top: 24px;
     }
 
-    .classes-list__details {
+    .class-preview__details {
         position: absolute;
         left: 24px;
         bottom: 26px;
     }
 
-    .classes-list__note {
+    .class-preview__note {
         position: absolute;
         left: 24px;
         right: 24px;
