@@ -1,42 +1,42 @@
-.homework {
+.assignment {
     padding-top: 32px;
     padding-bottom: 64px;
 }
-    .homework__head {
+    .assignment__head {
         padding-bottom: 27px;
         border-bottom: 1px solid var(--black);
     }
-        .homework__breadcrumbs {
+        .assignment__breadcrumbs {
             margin-bottom: 2px;
         }
 
-        .homework__heading {
+        .assignment__heading {
             margin-top: 0;
             margin-bottom: 0;
         }
 
-    .homework__body {
+    .assignment__body {
         position: relative;
         width: 860px;
         padding-top: 31px;
         margin-left: auto;
         margin-right: auto;
     }
-        .homework__author {
+        .assignment__author {
 
         }
-            .homework__avatar {
+            .assignment__avatar {
                 position: absolute;
                 left: -72px;
                 top: 42px;
             }
 
-            .homework__name {
+            .assignment__name {
                 font-size: var(--caption-font);
                 line-height: var(--caption-line);
             }
 
-        .homework__question {
+        .assignment__question {
             margin-top: 13px;
         }
 
@@ -44,31 +44,31 @@
 
 @media (max-width: 639px) {
 
-    .homework {
+    .assignment {
         /*padding-top: 32px;*/
         /*padding-bottom: 64px;*/
     }
-        .homework__head {
+        .assignment__head {
             /*padding-bottom: 27px;*/
             /*border-bottom: 1px solid var(--black);*/
         }
-            .homework__breadcrumbs {
+            .assignment__breadcrumbs {
                 /*margin-bottom: 2px;*/
             }
 
-            .homework__heading {
+            .assignment__heading {
                 /*margin-top: 0;*/
                 /*margin-bottom: 0;*/
             }
 
-        .homework__body {
+        .assignment__body {
             /*position: relative;*/
             width: auto;
             /*padding-top: 31px;*/
             /*margin-left: auto;*/
             /*margin-right: auto;*/
         }
-            .homework__author {
+            .assignment__author {
                 position: static;
                 display: grid;
                 grid-auto-flow: column;
@@ -76,18 +76,18 @@
                 align-items: center;
                 grid-gap: 16px;
             }
-                .homework__avatar {
+                .assignment__avatar {
                     position: static;
                     /*left: -68px;*/
                     /*top: 42px;*/
                 }
 
-                .homework__name {
+                .assignment__name {
                     /*font-size: var(--caption-font);*/
                     /*line-height: var(--caption-line);*/
                 }
 
-            .homework__question {
+            .assignment__question {
 
             }
 }
