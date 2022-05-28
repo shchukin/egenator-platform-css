@@ -29,12 +29,13 @@
             padding: 40px 32px 40px 24px;
             display: grid;
             grid-template-columns: auto 1fr auto;
+            align-items: center;
             background-color: var(--beige-5-current);
             border-radius: 8px;
         }
             .task__sub-heading {
+                margin-top: 2px;
                 margin-right: 16px;
-                margin-top: 13px;
                 font-size: var(--body2-font);
                 line-height: var(--body2-line);
             }

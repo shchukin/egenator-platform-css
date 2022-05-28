@@ -9,6 +9,8 @@
     --black-16pct: rgba(0, 0, 0, 0.16);
     --black-32pct: rgba(0, 0, 0, 0.32);
     --black-40pct: rgba(0, 0, 0, 0.4);
+    --black-40pct-hover: rgba(0, 0, 0, 0.3);
+    --black-40pct-active: rgba(0, 0, 0, 0.5);
     --black-hover: rgba(17, 17, 17, 0.8);
     --black-disabled-background: rgba(17, 17, 17, 0.08);
     --black-disabled-text: rgba(17, 17, 17, 0.32);
