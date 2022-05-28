@@ -15,6 +15,7 @@
     --panel-hover: #F7F7F7;
     --panel-active: #F4F4F4;
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
+    --container-padding-desktop: 32px;
     --container-padding-mobile: 24px;
 
     --body1-font: 14px;

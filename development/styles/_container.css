@@ -1,8 +1,8 @@
 .container {
     min-width: 1140px;
     max-width: 1366px;
-    border-left: 32px solid transparent;
-    border-right: 32px solid transparent;
+    border-left: var(--container-padding-desktop) solid transparent;
+    border-right: var(--container-padding-desktop) solid transparent;
     margin-left: auto;
     margin-right: auto;
 }

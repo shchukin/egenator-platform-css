@@ -1,6 +1,8 @@
 .assignment {
     padding-top: 32px;
     padding-bottom: 64px;
+    margin-left: var(--container-padding-desktop);
+    margin-right: var(--container-padding-desktop);
 }
     .assignment__head {
         padding-bottom: 27px;
@@ -45,8 +47,8 @@
 @media (max-width: 639px) {
 
     .assignment {
-        /*padding-top: 32px;*/
-        /*padding-bottom: 64px;*/
+        margin-left: var(--container-padding-mobile);
+        margin-right: var(--container-padding-mobile);
     }
         .assignment__head {
             /*padding-bottom: 27px;*/

@@ -26,7 +26,7 @@
 
         .task__answer {
             margin-top: 24px;
-            padding: 40px 24px;
+            padding: 40px 32px 40px 24px;
             display: grid;
             grid-template-columns: auto 1fr auto;
             background-color: var(--beige-5-current);
@@ -109,6 +109,19 @@
         .task__next .button {
             min-width: 195px;
         }
+
+
+.task--no-solution {
+
+}
+    .task--no-solution .task__question {
+        padding: 0;
+        border: none;
+    }
+
+    .task--no-solution .task__field .input__widget {
+        padding-right: 15px;
+    }
 
 
 @media (max-width: 639px) {

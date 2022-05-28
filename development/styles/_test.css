@@ -1,0 +1,39 @@
+.test {
+    margin-left: var(--container-padding-desktop);
+    margin-right: var(--container-padding-desktop);
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+    .test__head {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--black);
+    }
+
+    .test__body {
+        max-width: 860px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .test__foot {
+        margin-top: 40px;
+    }
+        .test__report {
+            margin-bottom: 24px;
+            font-size: var(--body1-font);
+            line-height: var(--body1-line);
+            color: var(--black-40pct);
+        }
+
+        .test__navigation {
+            margin-left: calc(-1 * var(--container-padding-desktop));
+            margin-right: calc(-1 * var(--container-padding-desktop));
+            padding: 24px var(--container-padding-desktop) 32px;
+            border-top: 1px solid var(--black);
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+        }

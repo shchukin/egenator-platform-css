@@ -2,6 +2,7 @@
 @import url("../vendors/magnific-popup/dist/magnific-popup.css");
 @import url("../vendors/jquery-scrollbar/jquery.scrollbar.css");
 
+@import url("_html.css");
 @import url("_body.css");
 @import url("_button.css");
 @import url("_mfp.css");
@@ -41,3 +42,4 @@
 @import url("_correctly.css");
 @import url("_test-preview.css");
 @import url("_tests-list.css");
+@import url("_test.css");

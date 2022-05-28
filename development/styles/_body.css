@@ -1,6 +1,7 @@
 body {
     min-width: 1000px;
     margin: 0;
+    height: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-default);
