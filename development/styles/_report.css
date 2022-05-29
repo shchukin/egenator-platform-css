@@ -29,6 +29,8 @@
     .report td:nth-child(2) {
         box-sizing: content-box;
         min-width: 144px;
+    }
+    .report td:nth-child(2) {
         white-space: nowrap;
     }
 
@@ -36,6 +38,9 @@
     .report td:nth-child(3) {
         box-sizing: content-box;
         min-width: 144px;
+        white-space: nowrap;
+    }
+    .report td:nth-child(3) {
         white-space: nowrap;
     }
 
@@ -84,6 +89,8 @@
 
             .report tbody td {
                 padding: 10px 16px 12px;
+                font-size: var(--body2-font);
+                line-height: var(--body2-line);
             }
 
             .report tbody tr:first-child td:first-child {
@@ -93,5 +100,145 @@
             .report tbody tr:first-child td:last-child {
                 border-top-right-radius: 8px;
             }
+
+
+
+@media (max-width: 639px) {
+
+    .report {
+        /*vertical-align: top;*/
+        /*width: 100%;*/
+        /*border-collapse: collapse;*/
+    }
+        .report th,
+        .report td {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .report th:first-child,
+        .report td:first-child {
+            /*padding-left: 24px;*/
+        }
+
+        .report th:last-child,
+        .report td:last-child {
+            padding-right: 16px;
+        }
+
+
+        .report th:nth-child(1),
+        .report td:nth-child(1) {
+            /*width: 100%;*/
+        }
+
+        .report th:nth-child(2),
+        .report td:nth-child(2) {
+            /*box-sizing: content-box;*/
+            min-width: 0;
+            /*white-space: nowrap;*/
+        }
+
+        .report th:nth-child(3),
+        .report td:nth-child(3) {
+            /*box-sizing: content-box;*/
+            min-width: 0;
+            /*white-space: nowrap;*/
+        }
+
+
+        .report thead {
+
+        }
+            .report thead tr {
+
+            }
+                .report thead th {
+                    /*padding: 8px 16px 10px;*/
+                    /*background-color: var(--beige-2);*/
+                    /*font-weight: normal;*/
+                    /*font-size: var(--body1-font);*/
+                    /*line-height: var(--body1-line);*/
+                    /*color: var(--black-40pct);*/
+                    /*text-align: left;*/
+                    font-size: var(--body1-font);
+                    line-height: var(--body1-line);
+                }
+
+                .report thead th:first-child {
+                    /*border-top-left-radius: 8px;*/
+                    /*border-bottom-left-radius: 8px;*/
+                }
+
+                .report thead th:last-child {
+                    /*border-top-right-radius: 8px;*/
+                    /*border-bottom-right-radius: 8px;*/
+                }
+
+        .report tbody {
+
+        }
+            .report tbody tr {
+                /*cursor: pointer;*/
+                /*border-bottom: 1px solid var(--beige-4-active);*/
+            }
+
+            .report tbody tr:hover {
+                /*background-color: var(--panel-hover);*/
+            }
+
+            .report tbody tr:active {
+                /*background-color: var(--panel-active);*/
+            }
+
+                .report tbody td {
+                    /*padding: 10px 16px 12px;*/
+                    /*font-size: var(--body2-font);*/
+                    /*line-height: var(--body2-line);*/
+                }
+
+                .report tbody tr:first-child td:first-child {
+                    /*border-top-left-radius: 8px;*/
+                }
+
+                .report tbody tr:first-child td:last-child {
+                    /*border-top-right-radius: 8px;*/
+                }
+}
+
+
+
+@media (max-width: 399px) {
+    .report thead th {
+        font-size: 12px;
+        line-height: 18px;
+        padding-right: 0;
+    }
+    .report tbody td {
+        font-size: var(--body1-font);
+        line-height: var(--body1-line)
+    }
+}
+
+@media (max-width: 359px) {
+    .report thead th {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .report tbody td {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .report thead th:first-child,
+    .report tbody td:first-child {
+        padding-left: 16px;
+    }
+
+    .report thead th:last-child,
+    .report tbody td:last-child {
+        padding-right: 16px;
+    }
+}
 
 

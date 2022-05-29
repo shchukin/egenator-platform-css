@@ -50,7 +50,6 @@
             font-weight: normal;
             font-size: 24px;
             line-height: 32px;
-            white-space: nowrap;
         }
 
         .test__sub-heading {
@@ -177,7 +176,7 @@
         }
             .test__back {
                 /*position: absolute;*/
-                /*left: 32px;*/
+                left: var(--container-padding-mobile);
                 /*top: 24px;*/
             }
 
@@ -217,6 +216,7 @@
             }
 
             .test__sub-heading {
+                display: none;
                 /*margin-top: 2px;*/
                 /*margin-bottom: 0;*/
                 /*font-weight: normal;*/

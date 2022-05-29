@@ -2,9 +2,9 @@
 
 }
     .attach__gallery {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100px);
         align-items: flex-start;
-        flex-wrap: wrap;
         gap: 16px;
         margin-bottom: 16px;
     }
@@ -96,8 +96,9 @@
 
     }
         .attach__gallery {
-            /*display: flex;*/
-            /*align-items: flex-start;*/
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            align-items: flex-start;
             /*flex-wrap: wrap;*/
             gap: 8px;
             /*margin-bottom: 16px;*/
@@ -115,6 +116,8 @@
                         /*vertical-align: top;*/
                         /*background-color: var(--image-fallback);*/
                         /*border-radius: 6px;*/
+                        width: 100%;
+                        height: auto;
                     }
 
                     .attach__link::after {

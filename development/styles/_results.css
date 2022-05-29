@@ -49,3 +49,75 @@
     }
 
 
+
+@media (max-width: 639px) {
+
+    .results {
+
+    }
+        .results__navigations {
+            /*display: grid;*/
+            /*grid-auto-flow: column;*/
+            /*grid-auto-columns: minmax(0, 1fr);*/
+        }
+            .results__link {
+                /*position: relative;*/
+                /*padding: 12px 24px 14px;*/
+                /*font-size: var(--body2-font);*/
+                /*line-height: var(--body2-line);*/
+                /*text-align: center;*/
+                /*color: var(--black);*/
+                /*text-decoration: none;*/
+            }
+
+            .results__link:hover {
+                /*color: var(--light-green);*/
+            }
+
+                .results__link::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*left: 3px;*/
+                    /*right: 3px;*/
+                    /*bottom: 0;*/
+                    /*display: block;*/
+                    /*height: 4px;*/
+                    /*background-color: var(--black-8pct);*/
+                    /*border-radius: 2px;*/
+                }
+
+            .results__link--current,
+            .results__link--current:hover,
+            .results__link--current:after {
+                /*color: var(--black);*/
+                /*cursor: default;*/
+            }
+                .results__link--current::after,
+                .results__link--current:hover::after,
+                .results__link--current:active::after {
+                    /*background-color: var(--black);*/
+                }
+
+        .results__data {
+            /*margin-top: 30px;*/
+            margin-left: calc(-1 * var(--container-padding-mobile));
+            margin-right: calc(-1 * var(--container-padding-mobile));
+        }
+}
+
+
+@media (max-width: 399px) {
+    .results__link {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 359px) {
+    .results__navigations {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
