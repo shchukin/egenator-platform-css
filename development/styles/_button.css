@@ -1,5 +1,7 @@
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     vertical-align: top;
     border: none;
     padding: 12px 20px 14px;
@@ -23,6 +25,10 @@
 .button:active {
     background-color: var(--black);
 }
+    .button__icon {
+        margin: 1px 8px -1px -4px;
+        fill: currentColor;
+    }
 
 
 
@@ -80,9 +86,6 @@
     box-shadow: none;
     color: var(--black-32pct);
 }
-
-
-
 
 
 .button--larger {

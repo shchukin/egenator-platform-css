@@ -3,37 +3,69 @@
     margin-right: var(--container-padding-desktop);
     height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
 }
     .test__head {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 96px;
+        padding-left: 130px;
+        padding-right: 130px;
         border-bottom: 1px solid var(--black);
+        text-align: center;
     }
+        .test__pause {
+            position: absolute;
+            left: 32px;
+            top: 24px;
+        }
+
+        .test__time {
+
+        }
+
+        .test__sub-heading {
+            margin-top: 2px;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: var(--body2-font);
+            line-height: var(--body2-line);
+        }
+
+        .test__heading {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
 
     .test__body {
-        max-width: 860px;
-        margin-top: 32px;
-        margin-left: auto;
-        margin-right: auto;
+        display: grid;
+        grid-template-rows: 1fr auto;
     }
-
-    .test__foot {
-        margin-top: 40px;
-    }
-        .test__report {
-            margin-bottom: 24px;
-            font-size: var(--body1-font);
-            line-height: var(--body1-line);
-            color: var(--black-40pct);
+        .test__content {
+            max-width: 860px;
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .test__navigation {
-            margin-left: calc(-1 * var(--container-padding-desktop));
-            margin-right: calc(-1 * var(--container-padding-desktop));
-            padding: 24px var(--container-padding-desktop) 32px;
-            border-top: 1px solid var(--black);
-            display: grid;
-            grid-auto-flow: column;
-            justify-content: space-between;
+        .test__footer {
+            margin-top: 40px;
         }
+            .test__report {
+                margin-bottom: 24px;
+                font-size: var(--body1-font);
+                line-height: var(--body1-line);
+                color: var(--black-40pct);
+            }
+
+            .test__navigation {
+                margin-left: calc(-1 * var(--container-padding-desktop));
+                margin-right: calc(-1 * var(--container-padding-desktop));
+                padding: 24px var(--container-padding-desktop) 32px;
+                border-top: 1px solid var(--black);
+                display: grid;
+                grid-auto-flow: column;
+                justify-content: space-between;
+            }
