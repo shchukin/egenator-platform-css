@@ -180,9 +180,7 @@
             }
 
             .task__answer {
-                /*margin-top: 24px;*/
-                /*padding: 40px 24px;*/
-                padding-top: 24px;
+                padding: 24px 24px 40px;
                 display: block;
                 /*grid-template-columns: auto 1fr auto;*/
                 /*background-color: var(--beige-5-current);*/
