@@ -16,7 +16,7 @@
         border-bottom: 1px solid var(--black);
         text-align: center;
     }
-        .test__pause {
+        .test__toggle-pause {
             position: absolute;
             left: 32px;
             top: 24px;
@@ -40,6 +40,7 @@
         }
 
     .test__body {
+        position: relative;
         display: grid;
         grid-template-rows: 1fr auto;
     }
@@ -69,3 +70,26 @@
                 grid-auto-flow: column;
                 justify-content: space-between;
             }
+
+        .test__pause {
+            position: absolute;
+            left: calc(-1 * var(--container-padding-desktop));
+            right: calc(-1 * var(--container-padding-desktop));
+            top: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding-top: calc((100vh - 266px) / 3);
+            display: none;
+        }
+
+
+.test--paused {
+
+}
+    .test--paused .test__content {
+        filter: blur(40px);
+    }
+
+    .test--paused .test__pause {
+        display: block;
+    }

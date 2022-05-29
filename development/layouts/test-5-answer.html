@@ -19,7 +19,7 @@
 
         <div class="test">
             <div class="test__head">
-                <button class="test__pause button button--secondary" type="button">
+                <button class="test__toggle-pause button button--secondary" type="button">
                     <img class="button__icon" src="../symbols/pause.svg" width="16" height="16" alt="">
                     Пауза
                 </button>
@@ -185,12 +185,28 @@
                         </a>
                     </div>
                     <div class="test__navigation">
-                        <a class="test__prev button button--secondary" href="#">
+                        <a class="test__prev button button--larger button--secondary" href="#">
                             Предыдущее задание
                         </a>
-                        <a class="test__next button" href="#">
+                        <a class="test__next button button--larger" href="#">
                             Следующая задача
                         </a>
+                    </div>
+                </div>
+                <div class="test__pause">
+                    <div class="pause">
+                        <div class="pause__inner">
+                            <div class="pause__heading title title--h5">
+                                Тест на паузе
+                            </div>
+                            <div class="pause__note">
+                                Весь прогресс сохранен
+                            </div>
+                            <div class="pause__operations">
+                                <button class="pause__action test__resume button button--larger" type="button">Продолжить тест</button>
+                                <a class="pause__action button button--larger button--secondary" href="#">Выйти</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,6 +226,7 @@
         <script src="../scripts/_schedule.js"></script>
         <script src="../scripts/_progress.js"></script>
         <script src="../scripts/_task.js"></script>
+        <script src="../scripts/_test.js"></script>
 
     </body>
 </html>

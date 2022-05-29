@@ -1,0 +1,32 @@
+.pause {
+
+}
+    .pause__inner {
+
+    }
+        .pause__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .pause__note {
+            margin-top: 14px;
+            font-size: var(--body2-font);
+            line-height: var(--body2-line);
+            text-align: center;
+        }
+
+        .pause__operations {
+            margin-top: 42px;
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: center;
+        }
+            .pause__action {
+                margin-left: 16px;
+            }
+
+            .pause__action:first-child {
+                margin-left: 0;
+            }
