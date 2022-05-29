@@ -16,6 +16,12 @@
         border-bottom: 1px solid var(--black);
         text-align: center;
     }
+        .test__back {
+            position: absolute;
+            left: 32px;
+            top: 24px;
+        }
+
         .test__toggle-pause {
             position: absolute;
             left: 32px;
