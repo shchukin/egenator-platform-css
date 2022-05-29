@@ -21,9 +21,25 @@
             left: 32px;
             top: 24px;
         }
+            .test__pause-icon {
+                display: block;
+            }
 
-        .test__time {
+            .test__play-icon {
+                display: none;
+            }
 
+            .test__pause-label {
+                display: block;
+            }
+
+            .test__play-label {
+                display: none;
+            }
+
+        .test__alt-heading {
+            margin-top: 0;
+            margin-bottom: 0;
         }
 
         .test__sub-heading {
@@ -49,6 +65,7 @@
             margin-top: 32px;
             margin-left: auto;
             margin-right: auto;
+            width: 100%;
         }
 
         .test__footer {
@@ -86,6 +103,22 @@
 .test--paused {
 
 }
+    .test--paused .test__pause-icon {
+        display: none;
+    }
+
+    .test--paused .test__play-icon {
+        display: block;
+    }
+
+    .test--paused .test__pause-label {
+        display: none;
+    }
+
+    .test--paused .test__play-label {
+        display: block;
+    }
+
     .test--paused .test__content {
         filter: blur(40px);
     }

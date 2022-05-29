@@ -20,10 +20,12 @@
         <div class="test">
             <div class="test__head">
                 <button class="test__toggle-pause button button--secondary" type="button">
-                    <img class="button__icon" src="../symbols/pause.svg" width="16" height="16" alt="">
-                    Пауза
+                    <img class="button__icon test__pause-icon" src="../symbols/pause.svg" width="16" height="16" alt="">
+                    <img class="button__icon test__play-icon" src="../symbols/play.svg" width="16" height="16" alt="">
+                    <span class="test__pause-label">Пауза</span>
+                    <span class="test__play-label">Продолжить</span>
                 </button>
-                <div class="test__time title title--h6">
+                <div class="test__alt-heading title title--h6">
                     3 : 54 : 59
                 </div>
                 <h1 class="test__sub-heading">
@@ -229,6 +231,22 @@
                         <a class="test__next button button--larger" href="#">
                             Следующая задача
                         </a>
+                    </div>
+                </div>
+                <div class="test__pause">
+                    <div class="pause">
+                        <div class="pause__inner">
+                            <div class="pause__heading title title--h5">
+                                Тест на паузе
+                            </div>
+                            <div class="pause__note">
+                                Весь прогресс сохранен
+                            </div>
+                            <div class="pause__operations">
+                                <button class="pause__action test__resume button button--larger" type="button">Продолжить тест</button>
+                                <a class="pause__action button button--larger button--secondary" href="#">Выйти</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

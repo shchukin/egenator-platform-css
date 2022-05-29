@@ -14,6 +14,7 @@
     --black-hover: rgba(17, 17, 17, 0.8);
     --black-disabled-background: rgba(17, 17, 17, 0.08);
     --black-disabled-text: rgba(17, 17, 17, 0.32);
+    --error: #F12260;
     --panel-hover: #F7F7F7;
     --panel-active: #F4F4F4;
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
