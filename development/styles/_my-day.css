@@ -1,0 +1,66 @@
+.my-day {
+    border: 1px solid var(--black);
+    padding: 24px 24px 36px;
+    border-radius: 16px;
+}
+    .my-day__heading {
+
+    }
+
+    .my-day__note {
+        font-size: var(--body1-font);
+        line-height: var(--body1-line);
+    }
+
+    .my-day__section {
+        margin-top: 20px;
+    }
+
+    .my-day__section + .my-day__section {
+        margin-top: 20px;
+        border-top: 1px solid var(--beige-4-active);
+        padding-top: 20px;
+    }
+        .my-day__item {
+            position: relative;
+            padding-left: 15px;
+            padding-right: 51px;
+            display: block;
+            text-decoration: none;
+            border-radius: 1px;
+        }
+
+        .my-day__item:hover {
+            background-color: var(--panel-hover);
+        }
+
+        .my-day__item:active {
+            background-color: var(--panel-active);
+        }
+
+        .my-day__item + .my-day__item {
+            margin-top: 20px;
+        }
+            .my-day__border {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 3px;
+                border-radius: 1px;
+            }
+
+            .my-day__label {
+                font-size: var(--body1-font);
+                line-height: var(--body1-line);
+                color: var(--black);
+            }
+
+            .my-day__time {
+                position: absolute;
+                right: 8px;
+                top: 2px;
+                font-size: var(--caption-font);
+                line-height: var(--caption-line);
+                color: var(--black-40pct)
+            }

@@ -51,5 +51,9 @@
     --beige-2: #F8F6F0;
     --beige-4-active: #EEEBDF;
     --beige-5-current: #FFF7CB;
+
+    --math: #FAD03D;
+    --russian: #34CCFF;
+    --informatics: #F497E5;
 }
 /* stylelint-enable declaration-colon-space-after */
