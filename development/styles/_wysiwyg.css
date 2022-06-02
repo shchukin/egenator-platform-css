@@ -37,6 +37,39 @@
 }
 /* stylelint-enable */
 
+
+/* stylelint-disable function-parentheses-space-inside */
+.wysiwyg--halfen p,
+.wysiwyg--halfen ul,
+.wysiwyg--halfen ol,
+.wysiwyg--halfen hr,
+.wysiwyg--halfen figure,
+.wysiwyg--halfen blockquote,
+.wysiwyg--halfen .video {
+    margin-top: calc(var(--body2-line) / 2);
+    margin-bottom: calc(var(--body2-line) / 2);
+}
+
+@media (max-width: 639px) {
+
+    .wysiwyg--halfen p,
+    .wysiwyg--halfen ul,
+    .wysiwyg--halfen ol,
+    .wysiwyg--halfen hr,
+    .wysiwyg--halfen figure,
+    .wysiwyg--halfen blockquote,
+    .wysiwyg--halfen .video {
+        margin-top: calc(var(--body2-line-mobile) / 2);
+        margin-bottom: calc(var(--body2-line-mobile) /2);
+    }
+}
+/* stylelint-enable */
+
+
+
+
+
+
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
 .wysiwyg ol:first-child,
