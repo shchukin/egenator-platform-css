@@ -80,7 +80,7 @@
                 }
 
                 .dashboard__list {
-
+                    grid-template-columns: none;
                 }
 
             .dashboard__sidebar {
