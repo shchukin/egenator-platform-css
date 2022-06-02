@@ -1,0 +1,9 @@
+.bar {
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--black-8pct);
+}
+    .bar__progress {
+        height: 6px;
+        border-radius: 3px;
+    }
