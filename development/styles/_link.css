@@ -28,15 +28,6 @@
 }
 
 
-.link--classic {
-    border-bottom-color: currentColor;
-}
-
-.link--classic:hover {
-    border-bottom-color: transparent;
-}
-
-
 
 .link--text-alike {
     border-bottom-color: transparent;
@@ -50,6 +41,15 @@
 
 .link--inherit {
     color: inherit;
+}
+
+
+.link--classic {
+    border-bottom-color: currentColor;
+}
+
+.link--classic:hover {
+    border-bottom-color: transparent;
 }
 
 

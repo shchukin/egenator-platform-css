@@ -36,10 +36,37 @@
             .profile__content {
 
             }
+                .profile__section {
+                    margin-top: 34px;
+                }
+
+                .profile__section:first-child {
+                    margin-top: 0;
+                }
+                    .profile__sub-heading {
+                        margin-top: 0;
+                        margin-bottom: 26px;
+                    }
+
+                    .profile__subscriptions {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-gap: 24px;
+                    }
+                        .profile__paid-course {
+
+                        }
+
+                    .profile__payments {
+
+                    }
 
             .profile__sidebar {
 
             }
+                .profile__payment-method {
+
+                }
 
 
 @media (max-width: 639px) {
@@ -61,35 +88,48 @@
                 /*margin-bottom: 0;*/
             }
 
-        .profile__body {
-            /*position: relative;*/
-            width: auto;
-            /*padding-top: 31px;*/
-            /*margin-left: auto;*/
-            /*margin-right: auto;*/
+        .profile__wrap {
+
         }
-            .profile__author {
-                position: static;
-                display: grid;
-                grid-auto-flow: column;
-                grid-template-columns: auto 1fr;
-                align-items: center;
-                grid-gap: 16px;
+            .profile__body {
+                width: auto;
+                display: block;
             }
-                .profile__avatar {
-                    position: static;
-                    /*left: -68px;*/
-                    /*top: 42px;*/
+                .profile__content {
+
                 }
+                    .profile__section {
 
-                .profile__name {
-                    /*font-size: var(--caption-font);*/
-                    /*line-height: var(--caption-line);*/
+                    }
+                        .profile__sub-heading {
+
+                        }
+
+                        .profile__subscriptions {
+                            display: block;
+                        }
+                            .profile__paid-course {
+                                margin-top: 16px;
+                            }
+
+                            .profile__paid-course:first-child {
+                                margin-top: 0;
+                            }
+
+                        .profile__payments {
+
+                        }
+
+                .profile__sidebar {
+
                 }
+                    .profile__payment-method {
 
-            .profile__question {
+                    }
 
-            }
+                .profile__question {
+
+                }
 }
 
 

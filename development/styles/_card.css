@@ -1,0 +1,24 @@
+.card {
+    padding: 20px 26px 22px;
+    border: 2px solid var(--black-16pct);
+    border-radius: 16px;
+}
+
+.card--less-rounding {
+    border-radius: 8px;
+}
+
+    .card__heading {
+        min-height: calc(2*var(--headline-2-line));
+    }
+
+    .card__footer {
+        margin-top: 26px;
+        font-size: var(--caption-font);
+        line-height: var(--caption-line);
+    }
+
+    .card__footer--larger {
+        font-size: 14px;
+        line-height: 16px;
+    }
