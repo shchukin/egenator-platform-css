@@ -1,23 +1,24 @@
 .profile {
     padding-top: 32px;
     padding-bottom: 64px;
-    margin-left: var(--container-padding-desktop);
-    margin-right: var(--container-padding-desktop);
 }
-    .profile__head {
-        padding-bottom: 27px;
-        border-bottom: 1px solid var(--black);
+    .profile__head-wrap {
+
     }
-        .profile__breadcrumbs {
-            margin-bottom: 2px;
+        .profile__head {
+            padding-bottom: 27px;
+            border-bottom: 1px solid var(--black);
         }
+            .profile__breadcrumbs {
+                margin-bottom: 2px;
+            }
 
-        .profile__heading {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+            .profile__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
 
-    .profile__wrap {
+    .profile__body-wrap {
 
     }
         .profile__body {
@@ -72,23 +73,25 @@
 @media (max-width: 639px) {
 
     .profile {
-        margin-left: var(--container-padding-mobile);
-        margin-right: var(--container-padding-mobile);
+
     }
-        .profile__head {
-            /*padding-bottom: 27px;*/
-            /*border-bottom: 1px solid var(--black);*/
+        .profile__head-wrap {
+
         }
-            .profile__breadcrumbs {
-                /*margin-bottom: 2px;*/
+            .profile__head {
+                /*padding-bottom: 27px;*/
+                /*border-bottom: 1px solid var(--black);*/
             }
+                .profile__breadcrumbs {
+                    /*margin-bottom: 2px;*/
+                }
 
-            .profile__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-            }
+                .profile__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                }
 
-        .profile__wrap {
+        .profile__body-wrap {
 
         }
             .profile__body {
@@ -121,7 +124,7 @@
                         }
 
                 .profile__sidebar {
-
+                    margin-top: 33px;
                 }
                     .profile__payment-method {
 

@@ -156,9 +156,13 @@
 
     .table--scrollable {
         overflow-x: auto;
+        margin-left: calc(-1 * var(--container-padding-mobile));
+        margin-right: calc(-1 * var(--container-padding-mobile));
+        padding-left: var(--container-padding-mobile);
+        padding-right: var(--container-padding-mobile);
     }
         .table--scrollable table {
-            min-width: 810px;
+            min-width: 880px;
         }
 }
 
