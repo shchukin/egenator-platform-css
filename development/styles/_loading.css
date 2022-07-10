@@ -25,14 +25,44 @@
         background-color: #FFFFFF;
     }
         .loading__bar {
+            position: relative;
             width: 100%;
             height: 100%;
-            text-indent: 200%;
-            white-space: nowrap;
-            overflow: hidden;
             border-radius: 3px;
         }
 
         .loading__progress--backward .loading__bar {
             opacity: 0.53;
         }
+            .loading__peak {
+                position: absolute;
+                right: 3px;
+                top: 50%;
+                width: 16px;
+                height: 16px;
+                margin-top: -8px;
+                margin-right: -8px;
+                border-radius: 50%;
+            }
+                .loading__bubble {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 23px;
+                    transform: translateX(-50%);
+                }
+
+    .loading__beginning {
+        position: absolute;
+        left: 1px;
+        top: 100%;
+        margin-top: 7px;
+        color: var(--black-40pct);
+    }
+
+    .loading__end {
+        position: absolute;
+        right: 1px;
+        top: 100%;
+        margin-top: 7px;
+        color: var(--black-40pct);
+    }
