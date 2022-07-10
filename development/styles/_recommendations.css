@@ -92,7 +92,8 @@
 @media (max-width: 639px) {
 
     .recommendations {
-
+        margin-left: calc(-1 * var(--container-padding-mobile));
+        margin-right: calc(-1 * var(--container-padding-mobile));
     }
         .recommendations__intro {
             padding-left: var(--container-padding-mobile);
@@ -115,6 +116,7 @@
                     /*display: grid;*/
                     /*width: 100%;*/
                     grid-template-columns: 1fr 88px 50px;
+                    padding-left: var(--container-padding-mobile);
                     /*border: none;*/
                     /*background-color: transparent;*/
                     /*border-top: 1px solid var(--beige-4-active);*/
@@ -166,6 +168,8 @@
                 .recommendations__dropdown {
                     /*display: none;*/
                     /*padding: 16px;*/
+                    padding-left: var(--container-padding-mobile);
+                    padding-right: var(--container-padding-mobile);
                 }
 
 

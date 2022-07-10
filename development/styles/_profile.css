@@ -80,6 +80,11 @@
             .profile__sidebar {
 
             }
+                .profile__nav {
+                    margin-top: -6px;
+                    margin-bottom: 34px;
+                }
+
                 .profile__side-section {
                     margin-top: 16px;
                 }
@@ -114,6 +119,8 @@
 
         }
             .profile__body {
+                position: relative;
+                padding-top: 124px;
                 width: auto;
                 display: block;
             }
@@ -142,9 +149,38 @@
 
                         }
 
+                        .profile__progress {
+                            margin-top: 0;
+                        }
+                            .profile__points {
+                                margin-left: 0;
+                            }
+
+                            .profile__graph {
+                                /*margin-top: 40px;*/
+                            }
+
+                        .profile__types {
+
+                        }
+
                 .profile__sidebar {
                     margin-top: 33px;
                 }
+                    .profile__nav {
+                        position: absolute;
+                        z-index: 10;
+                        left: 0;
+                        top: 32px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        background-color: #FFFFFF;
+                    }
+                        .profile__nav.accordion,
+                        .profile__nav .accordion {
+                            width: 100%;
+                        }
+
                     .profile__side-section {
 
                     }

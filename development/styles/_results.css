@@ -100,8 +100,7 @@
 
         .results__data {
             /*margin-top: 30px;*/
-            margin-left: calc(-1 * var(--container-padding-mobile));
-            margin-right: calc(-1 * var(--container-padding-mobile));
+
         }
 }
 
