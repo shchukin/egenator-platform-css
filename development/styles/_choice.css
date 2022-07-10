@@ -1,6 +1,8 @@
 .choice {
     position: relative;
     display: inline-block;
+    margin-left: -10px;
+    margin-right: -10px;
     vertical-align: top;
     min-width: 20px;
     min-height: 30px;
@@ -17,7 +19,7 @@
     .choice__icon {
         position: absolute;
         z-index: 10;
-        left: 10px;
+        left: 12px;
         top: 8px;
         width: 20px;
         height: 20px;
@@ -35,6 +37,7 @@
 
     .choice__widget:focus ~ .choice__icon {
         outline: auto;
+        outline-offset: 4px;
     }
 
     .choice--checkbox .choice__widget:checked ~ .choice__icon {
@@ -68,13 +71,14 @@
     /* Cancel radio hover */
     .choice--radio:hover .choice__widget:checked ~ .choice__label {
         background-color: transparent;
+        cursor: default;
     }
 
     .choice__label {
         position: relative;
         display: flex;
         vertical-align: top;
-        padding: 6px 10px 6px 44px;
+        padding: 6px 12px 6px 46px;
         border-radius: 2px;
         font-size: var(--body2-font);
         line-height: var(--body2-line);
@@ -82,14 +86,6 @@
     }
 
 
-
-
-
-
-.choice__widget[type="radio"]:checked ~ .choice__icon,
-.choice__widget[type="radio"]:checked ~ .choice__icon ~ .choice__label {
-    cursor: default;
-}
 
 
 
@@ -146,6 +142,7 @@
     .choice--disabled .choice__label {
         cursor: default;
         color: #8B8B8B;
+        background-color: transparent !important;
     }
 
 
@@ -186,15 +183,3 @@
         color: #545454;
     }
 
-.choice--larger-font {
-
-}
-    .choice--larger-font .choice__icon {
-        margin-top: 1px;
-    }
-
-    .choice--larger-font .choice__label {
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 20px;
-    }
