@@ -19,6 +19,10 @@
             width: 100%;
         }
 
+        .reports-preview__action .input__widget {
+            background-color: transparent;
+        }
+
     .reports-preview__footer {
         margin-top: 12px;
     }

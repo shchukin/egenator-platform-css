@@ -1,0 +1,49 @@
+.data {
+
+}
+    .data__summary {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+    }
+        .data__preview {
+            position: relative;
+            padding: 9px;
+        }
+            .data__avatar {
+                vertical-align: top;
+                border-radius: 50%;
+            }
+
+            .data__progress {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+        .data__level {
+            margin-top: 32px;
+        }
+            .data__sub-heading {
+                font-size: var(--body1-font);
+                line-height: var(--body1-line);
+            }
+
+            .data__value {
+                margin-top: -2px;
+                text-align: center;
+            }
+
+    .data__details {
+        margin-top: 21px;
+        margin-left: 12px;
+    }
+        .data__name {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .data__note {
+            margin-top: 5px;
+            color: var(--black-40pct);
+        }

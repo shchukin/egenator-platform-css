@@ -77,6 +77,20 @@
 
                     }
 
+                .profile__summary {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 32px;
+                }
+                    .profile__data {
+                        margin-top: -4px;
+                    }
+
+                    .profile__achievements {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
             .profile__sidebar {
 
             }
@@ -120,10 +134,14 @@
         }
             .profile__body {
                 position: relative;
-                padding-top: 124px;
                 width: auto;
                 display: block;
             }
+
+            .profile--has-navigation .profile__body {
+                padding-top: 124px;
+            }
+
                 .profile__content {
 
                 }
