@@ -3,6 +3,7 @@
 }
     .marks__body {
         display: flex;
+        justify-content: space-between;
     }
         .marks__column {
             position: relative;
@@ -41,9 +42,7 @@
         width: auto;
     }
         .marks__body {
-            /*display: grid;*/
-            /*grid-auto-flow: column;*/
-            /*justify-content: space-between;*/
+            justify-content: flex-start;
         }
             .marks__column {
                 /*position: relative;*/
