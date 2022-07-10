@@ -34,3 +34,44 @@
         .form__submit .button {
             width: 308px;
         }
+
+
+@media (max-width: 639px) {
+
+    .form {
+
+    }
+        .form__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .form__fieldset {
+            /*margin-top: 42px;*/
+        }
+
+        .form__fieldset:first-child {
+            /*margin-top: 0;*/
+        }
+
+        .form__heading + .form__fieldset {
+            /*margin-top: 34px;*/
+        }
+            .form__row {
+                /*margin-top: 12px;*/
+            }
+
+            .form__row:first-child {
+                /*margin-top: 0;*/
+            }
+
+            .form__submit {
+                /*margin-top: 40px;*/
+                margin-left: 0;
+            }
+
+            .form__submit.button,
+            .form__submit .button {
+                width: 100%;
+            }
+}

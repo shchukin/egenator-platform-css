@@ -196,7 +196,7 @@
             }
 
             .accordion__link:last-child {
-            
+
             }
                 .accordion__link::after {
                     display: none;
