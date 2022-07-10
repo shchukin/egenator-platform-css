@@ -1,0 +1,20 @@
+.labeled {
+    display: grid;
+    grid-template-columns: 197px 308px;
+    grid-gap: 24px;
+}
+    .labeled__heading {
+        margin-top: 11px;
+        font-size: var(--body2-font);
+        line-height: var(--body2-line);
+    }
+        .labeled__label {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+    .labeled__field {
+
+    }

@@ -1,0 +1,107 @@
+.settings {
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+    .settings__head-wrap {
+
+    }
+        .settings__head {
+            padding-bottom: 27px;
+            border-bottom: 1px solid var(--black);
+        }
+            .settings__breadcrumbs {
+                margin-bottom: 2px;
+            }
+
+            .settings__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+    .settings__body-wrap {
+
+    }
+        .settings__body {
+            padding-top: 31px;
+            display: grid;
+            grid-template-columns: 860fr 307fr;
+            grid-gap: 32px;
+        }
+
+        @media (min-width: 1240px) {
+            .settings__body {
+                grid-template-columns: 860px 307px;
+                justify-content: space-between;
+            }
+        }
+            .settings__content {
+
+            }
+
+            .settings__sidebar {
+
+            }
+                .settings__nav {
+                    margin-top: -6px;
+                }
+
+
+@media (max-width: 639px) {
+
+    .settings {
+
+    }
+        .settings__head-wrap {
+
+        }
+            .settings__head {
+                /*padding-bottom: 27px;*/
+                /*border-bottom: 1px solid var(--black);*/
+            }
+                .settings__breadcrumbs {
+                    /*margin-bottom: 2px;*/
+                }
+
+                .settings__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                }
+
+        .settings__body-wrap {
+
+        }
+            .settings__body {
+                position: relative;
+                width: auto;
+                display: block;
+                padding-top: 124px;
+            }
+
+            .settings--has-navigation .settings__body {
+                padding-top: 124px;
+            }
+
+                .settings__content {
+
+                }
+
+
+                .settings__sidebar {
+                    margin-top: 33px;
+                }
+                    .settings__nav {
+                        position: absolute;
+                        z-index: 10;
+                        left: 0;
+                        top: 32px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        background-color: #FFFFFF;
+                    }
+                        .settings__nav.accordion,
+                        .settings__nav .accordion {
+                            width: 100%;
+                        }
+}
+
+

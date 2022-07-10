@@ -1,5 +1,5 @@
 .input {
-
+    position: relative;
 }
     .input__widget {
         width: 100%;
@@ -32,6 +32,43 @@
     /* stylelint-enable */
 
 
+.input--has-eye {
+
+}
+    .input--has-eye .input__widget {
+        padding-right: 48px;
+    }
+
+    .input__toggle-password {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        width: 48px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .input__toggle-password:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .input__toggle-password:active {
+        background-color: var(--panel-active);
+    }
+
+        .input__eye {
+            vertical-align: top;
+            fill: #000000;
+        }
+
 .input--faded {
 
 }
@@ -48,4 +85,48 @@
         /*height: auto; !* user rows="" attribute *!*/
         /*min-height: 40px; !* one row *!*/
         /*resize: vertical;*/
+    }
+
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
+
+    .input--select {
+
+    }
+
+    .input--select .input__widget {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 50px;
+        background-image: url("../vectors/dropdown.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+    }
+
+    .input--select:not(.input--disabled) .input__widget {
+        cursor: pointer;
+    }
+
+    .firefox .input--select .input__widget {
+        border-left-width: 12px;
+    }
+}
+
+
+.input--larger {
+
+}
+    .input--larger.input--has-eye .input__widget {
+        padding-right: 56px;
+    }
+
+    .input--larger .input__widget {
+        height: 56px;
+        padding: 15px 19px;
+    }
+
+    .input--larger .input__toggle-password {
+        width: 56px;
     }

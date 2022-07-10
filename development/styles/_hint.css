@@ -1,0 +1,6 @@
+.hint {
+    padding-top: 6px;
+    font-size: var(--body1-font);
+    line-height: var(--body1-line);
+    color: var(--black-40pct);
+}
