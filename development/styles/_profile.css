@@ -182,6 +182,21 @@
 
                         }
 
+                    .profile__summary {
+                        display: block;
+                        /*align-items: flex-start;*/
+                        /*gap: 32px;*/
+                    }
+                        .profile__data {
+                            /*margin-top: -4px;*/
+                        }
+
+                        .profile__achievements {
+                            margin-top: 50px;
+                            /*margin-left: auto;*/
+                            /*margin-right: auto;*/
+                        }
+
                 .profile__sidebar {
                     margin-top: 33px;
                 }
