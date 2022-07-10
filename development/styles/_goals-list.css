@@ -1,0 +1,22 @@
+.goals-list {
+
+}
+    .goals-list__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .goals-list__listing {
+        margin-top: 34px;
+    }
+        .goals-list__item {
+            margin-top: 16px;
+        }
+
+        .goals-list__item:first-child {
+            margin-top: 0;
+        }
+
+    .goals-list__submit {
+        margin-top: 40px;
+    }
