@@ -1,0 +1,24 @@
+.reports-preview {
+    padding: 25px 24px 32px;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+}
+    .reports-preview__heading {
+
+    }
+
+    .reports-preview__description {
+        margin-top: 7px;
+    }
+
+    .reports-preview__action {
+        margin-top: 16px;
+    }
+        .reports-preview__action.button,
+        .reports-preview__action .button {
+            width: 100%;
+        }
+
+    .reports-preview__footer {
+        margin-top: 12px;
+    }

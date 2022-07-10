@@ -1,0 +1,26 @@
+.media {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    gap: 6px;
+}
+    .media__link {
+        height: 38px;
+        border: 1px solid var(--black-16pct);
+        border-radius: 6px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .media__link:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .media__link:active {
+        background-color: var(--panel-active);
+    }
+
+        .media__icon {
+            vertical-align: top;
+        }
