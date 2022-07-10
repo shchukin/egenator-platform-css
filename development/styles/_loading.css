@@ -1,0 +1,38 @@
+.loading {
+    position: relative;
+    height: 6px;
+    background-color: var(--black-8pct);
+    border-radius: 3px;
+}
+    .loading__point {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        border-radius: 1px;
+        background-color: var(--black);
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .loading__progress {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+    }
+        .loading__bar {
+            width: 100%;
+            height: 100%;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            border-radius: 3px;
+        }
+
+        .loading__progress--backward .loading__bar {
+            opacity: 0.53;
+        }

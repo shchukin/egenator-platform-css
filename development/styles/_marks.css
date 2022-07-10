@@ -1,0 +1,36 @@
+.marks {
+    width: 360px;
+}
+    .marks__body {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+    }
+        .marks__column {
+            position: relative;
+        }
+            .marks__heading {
+
+            }
+
+            .marks__value {
+                margin-top: 1px;
+            }
+
+        .marks__column:first-child {
+            position: relative;
+            padding-right: 23px;
+        }
+            .marks__column:first-child::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 5px;
+                width: 16px;
+                height: 16px;
+                background-image: url("../vectors/next.svg");
+            }
+
+    .marks__preview {
+        margin-top: 21px;
+    }

@@ -59,6 +59,21 @@
                         }
 
                     .profile__payments {
+                        margin-left: auto;
+                    }
+
+                    .profile__progress {
+                        margin-top: -58px;
+                    }
+                        .profile__points {
+                            margin-left: auto;
+                        }
+
+                        .profile__graph {
+                            margin-top: 40px;
+                        }
+
+                    .profile__types {
 
                     }
 
