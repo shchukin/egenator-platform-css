@@ -1,3 +1,11 @@
 .page {
     height: 100%;
 }
+
+
+@media (max-width: 639px) {
+
+    .notifications-expanded .page {
+        display: none;
+    }
+}

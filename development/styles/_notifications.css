@@ -16,10 +16,46 @@
     display: block;
 }
 
-    .notifications__heading {
+    .notifications__head {
+        position: relative;
         padding: 20px 24px;
-        color: #F9F9F9;
     }
+        .notifications__heading {
+            color: #F9F9F9;
+        }
+
+        .notifications__close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 72px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+            .notifications__close::before {
+                content: "";
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                top: 10px;
+                bottom: 10px;
+                border-radius: 8px;
+            }
+
+            .notifications__close:hover::before {
+                background-color: var(--black-background-hover);
+            }
+
+            .notifications__cross {
+                fill: #FFFFFF;
+                vertical-align: top;
+            }
 
     .notifications__list {
         min-height: 210px;
@@ -62,3 +98,85 @@
                 right: 16px;
                 top: 16px;
             }
+
+
+
+@media (max-width: 639px) {
+
+    .notifications {
+        position: static;
+        /*z-index: 1000;*/
+        /*right: 13px;*/
+        /*top: var(--header-height);*/
+        /*background-color: var(--black);*/
+        /*border-top: 1px solid var(--white-16pct);*/
+        /*padding-bottom: 24px;*/
+        /*border-bottom-left-radius: 16px;*/
+        /*border-bottom-right-radius: 16px;*/
+        border-radius: 0;
+        width: auto;
+        /*display: none;*/
+    }
+
+    .notifications-expanded {
+        background-color: var(--black);
+    }
+
+    .notifications-expanded .notifications {
+        /*display: block;*/
+    }
+
+        .notifications__heading {
+            /*padding: 20px 24px;*/
+            /*color: #F9F9F9;*/
+        }
+
+        .notifications__close {
+
+        }
+            .notifications__close::before {
+                display: none;
+            }
+
+        .notifications__list {
+            min-height: 0;
+            max-height: none;
+            overflow-y: visible;
+        }
+            .notifications__item {
+                /*position: relative;*/
+                /*display: block;*/
+                /*border-top: 1px solid var(--white-16pct);*/
+                /*padding: 22px 28px 25px 80px;*/
+                /*text-decoration: none;*/
+            }
+
+            .notifications__item:hover {
+                /*background-color: var(--black-background-hover);*/
+            }
+
+                .notifications__preview {
+                    /*position: absolute;*/
+                    /*left: 24px;*/
+                    /*top: 24px;*/
+                }
+
+                .notifications__message {
+                    /*font-size: var(--body2-font);*/
+                    /*line-height: var(--body2-line);*/
+                    /*color: #FFFFFF;*/
+                }
+
+                .notifications__note {
+                    /*margin-top: 8px;*/
+                    /*font-size: var(--body1-font);*/
+                    /*line-height: var(--body1-line);*/
+                    /*color: var(--white-40pct);*/
+                }
+
+                .header__updates {
+                    /*position: absolute;*/
+                    /*right: 16px;*/
+                    /*top: 16px;*/
+                }
+}

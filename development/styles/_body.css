@@ -2,6 +2,7 @@ body {
     min-width: 1160px;
     margin: 0;
     height: 100%;
+    background-color: transparent; /* Классы типа .notifications-expanded могут менять фон на уровне html */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-default);

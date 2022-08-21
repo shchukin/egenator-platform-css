@@ -4,6 +4,9 @@
         $('html').toggleClass('notifications-expanded');
     });
 
+    $('.notifications__close').on('click', function () {
+        $('html').removeClass('notifications-expanded');
+    });
 
     $(document).on('click', function (event) {
         if (!$(event.target).closest('.header__notifications, .notifications').length) {
