@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 1000;
     height: 72px;
     background-color: var(--black);
 }
@@ -38,7 +39,7 @@
 
     .header__profile {
         position: absolute;
-        right: 82px;
+        right: 93px;
         top: 0;
         bottom: 0;
         width: 270px;
@@ -107,8 +108,8 @@
         border-right: 13px solid transparent;
         background-color: transparent;
         padding: 0;
-        width: var(--header);
-        height: var(--header);
+        width: var(--header-height);
+        height: var(--header-height);
         cursor: pointer;
     }
         .header__notifications::after {
@@ -152,13 +153,6 @@
             position: absolute;
             right: 23px;
             top: 24px;
-            width: 6px;
-            height: 6px;
-            background-color: var(--green-icons);
-            border-radius: 50%;
-            text-indent: 200%;
-            white-space: nowrap;
-            overflow: hidden;
         }
 
 
@@ -175,7 +169,7 @@
             display: inline-block;
             vertical-align: top;
             width: 60px;
-            height: var(--header);
+            height: var(--header-height);
             background-color: transparent;
             border: none;
             padding: 0;
@@ -260,7 +254,7 @@
 
         .header__profile {
             /*position: absolute;*/
-            /*right: 93px;*/
+            right: 82px;
             /*top: 0;*/
             /*bottom: 0;*/
             width: 75px;

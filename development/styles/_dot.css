@@ -1,0 +1,9 @@
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--green-icons);
+    border-radius: 50%;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}

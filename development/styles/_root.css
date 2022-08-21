@@ -14,6 +14,8 @@
     --black-hover: rgba(17, 17, 17, 0.8);
     --black-disabled-background: rgba(17, 17, 17, 0.08);
     --black-disabled-text: rgba(17, 17, 17, 0.32);
+    --white-16pct: rgba(255, 255, 255, 0.16);
+    --white-40pct: rgba(255, 255, 255, 0.4);
     --error: #F12260;
     --panel-hover: rgba(0, 0, 0, 0.03);
     --panel-active: rgba(0, 0, 0, 0.05);
@@ -56,7 +58,7 @@
     --russian: #34CCFF;
     --informatics: #F497E5;
 
-    --header: 72px;
+    --header-height: 72px;
     --black-background-separator: rgba(255, 255, 255, 0.16);
     --black-background-hover: rgba(255, 255, 255, 0.08)
 }

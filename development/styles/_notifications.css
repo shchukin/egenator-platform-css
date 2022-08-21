@@ -1,0 +1,64 @@
+.notifications {
+    position: absolute;
+    z-index: 1000;
+    right: 13px;
+    top: var(--header-height);
+    background-color: var(--black);
+    border-top: 1px solid var(--white-16pct);
+    padding-bottom: 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    width: 382px;
+    display: none;
+}
+
+.notifications-expanded .notifications {
+    display: block;
+}
+
+    .notifications__heading {
+        padding: 20px 24px;
+        color: #F9F9F9;
+    }
+
+    .notifications__list {
+        min-height: 210px;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+        .notifications__item {
+            position: relative;
+            display: block;
+            border-top: 1px solid var(--white-16pct);
+            padding: 22px 28px 25px 80px;
+            text-decoration: none;
+        }
+
+        .notifications__item:hover {
+            background-color: var(--black-background-hover);
+        }
+
+            .notifications__preview {
+                position: absolute;
+                left: 24px;
+                top: 24px;
+            }
+
+            .notifications__message {
+                font-size: var(--body2-font);
+                line-height: var(--body2-line);
+                color: #FFFFFF;
+            }
+
+            .notifications__note {
+                margin-top: 8px;
+                font-size: var(--body1-font);
+                line-height: var(--body1-line);
+                color: var(--white-40pct);
+            }
+
+            .header__updates {
+                position: absolute;
+                right: 16px;
+                top: 16px;
+            }

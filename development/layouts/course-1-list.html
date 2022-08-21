@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="nav-expanded">
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -45,7 +45,7 @@
             </button>
             <button class="header__notifications" type="button">
                 <img class="header__bell" src="../symbols/bell.svg" width="20" height="20" alt="">
-                <span class="header__updates">6 updates</span>
+                <span class="header__updates dot">10 уведомлений</span>
             </button>
         </header>
 
@@ -59,7 +59,95 @@
         </nav>
 
         <div class="notifications">
-
+            <div class="notifications__heading title title--h6">
+                Уведомления
+            </div>
+            <div class="notifications__list">
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+            </div>
         </div>
 
         <div class="page">
@@ -279,6 +367,7 @@
         <script src="../scripts/_accordion.js"></script>
         <script src="../scripts/_schedule.js"></script>
         <script src="../scripts/_dropdown.js"></script>
+        <script src="../scripts/_header.js"></script>
 
     </body>
 </html>
