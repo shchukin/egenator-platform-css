@@ -1,0 +1,36 @@
+.close-in-header {
+    position: relative;
+    width: var(--header-height);
+    height: var(--header-height);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+    .close-in-header::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+        border-radius: 8px;
+    }
+
+    .close-in-header:hover::before {
+        background-color: var(--black-background-hover);
+    }
+
+    .close-in-header__cross {
+        vertical-align: top;
+    }
+
+
+@media (max-width: 639px) {
+    .close-in-header::before {
+        display: none;
+    }
+}

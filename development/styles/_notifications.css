@@ -16,45 +16,20 @@
 }
     .notifications__head {
         position: relative;
-        padding: 20px 24px;
-        border-bottom: 1px solid var(--white-16pct);
+        height: var(--header-height);
+        padding: 19px 24px 20px;
+        box-shadow: inset 0 1px 0 var(--white-16pct),
+                    inset 0 -1px 0 var(--white-16pct);
     }
         .notifications__heading {
             color: #F9F9F9;
         }
 
         .notifications__close {
-            position: absolute;
+            position: absolute !important;
             right: 0;
             top: 0;
-            bottom: 0;
-            width: 72px;
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            cursor: pointer;
         }
-            .notifications__close::before {
-                content: "";
-                position: absolute;
-                left: 10px;
-                right: 10px;
-                top: 10px;
-                bottom: 10px;
-                border-radius: 8px;
-            }
-
-            .notifications__close:hover::before {
-                background-color: var(--black-background-hover);
-            }
-
-            .notifications__cross {
-                fill: #FFFFFF;
-                vertical-align: top;
-            }
 
     .notifications__list {
         min-height: 210px;
@@ -107,6 +82,7 @@
 
     .notifications {
         position: static;
+        padding-top: var(--header-height);
         /*z-index: 1000;*/
         /*right: 13px;*/
         /*top: var(--header-height);*/
@@ -127,16 +103,21 @@
     .notifications-expanded .notifications {
         /*display: block;*/
     }
-        .notifications__heading {
-            /*padding: 20px 24px;*/
-            /*color: #F9F9F9;*/
+        .notifications__head {
+            position: fixed;
+            z-index: 1500;
+            left: 0;
+            right: 0;
+            top: var(--header-height);
+            background-color: var(--black);
         }
+            .notifications__heading {
+                /*padding: 20px 24px;*/
+                /*color: #F9F9F9;*/
+            }
 
-        .notifications__close {
+            .notifications__close {
 
-        }
-            .notifications__close::before {
-                display: none;
             }
 
         .notifications__list {

@@ -1,5 +1,7 @@
 (function($) {
 
+    /* Notifications */
+
     $('.header__notifications').on('click', function () {
         $('html').toggleClass('notifications-expanded');
     });
@@ -15,7 +17,7 @@
     });
 
     $(document).on('keyup', function (event) {
-        if (event.keyCode == 27) {
+        if (event.keyCode === 27) {
             $('html').removeClass('notifications-expanded');
         }
     });
