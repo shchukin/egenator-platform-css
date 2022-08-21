@@ -18,35 +18,37 @@
         <![endif]-->
 
         <header class="header">
-            <button class="header__burger" type="button">
-                <span class="header__bar header__bar--top"></span>
-                <span class="header__bar header__bar--middle"></span>
-                <span class="header__bar header__bar--bottom"></span>
-            </button>
-            <a class="header__logo" href="#">
-                <img class="header__emblem" src="../symbols/logo.svg" width="138" height="26" alt="">
-            </a>
-            <button class="header__profile" type="button">
-                <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
-                    <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
-                </svg>
-                <span class="header__photo avatar">
-                    <img class="avatar__image"
-                         srcset="../temp/person-f-48x48@2x.jpg 2x"
-                         src="../temp/person-f-48x48.jpg"
-                         width="48"
-                         height="48"
-                         alt="Tim Cook"
-                    >
-                </span>
-                <span class="header__name">Константин Константинопольский</span>
-                <span class="header__level">Уровень 6</span>
-            </button>
-            <button class="header__notifications" type="button">
-                <img class="header__bell" src="../symbols/bell.svg" width="20" height="20" alt="">
-                <span class="header__updates dot">10 уведомлений</span>
-            </button>
+            <div class="header__panel">
+                <button class="header__burger" type="button">
+                    <span class="header__bar header__bar--top"></span>
+                    <span class="header__bar header__bar--middle"></span>
+                    <span class="header__bar header__bar--bottom"></span>
+                </button>
+                <a class="header__logo" href="#">
+                    <img class="header__emblem" src="../symbols/logo.svg" width="138" height="26" alt="">
+                </a>
+                <button class="header__profile" type="button">
+                    <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
+                        <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
+                    </svg>
+                    <span class="header__photo avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-48x48@2x.jpg 2x"
+                             src="../temp/person-f-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Tim Cook"
+                        >
+                    </span>
+                    <span class="header__name">Константин Константинопольский</span>
+                    <span class="header__level">Уровень 6</span>
+                </button>
+                <button class="header__notifications" type="button">
+                    <img class="header__bell" src="../symbols/bell.svg" width="20" height="20" alt="">
+                    <span class="header__updates dot">10 уведомлений</span>
+                </button>
+            </div>
         </header>
 
         <nav>
