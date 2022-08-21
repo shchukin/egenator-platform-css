@@ -171,6 +171,7 @@
         /*background-color: var(--black);*/
     }
         .header__burger {
+            position: relative;
             display: inline-block;
             vertical-align: top;
             width: 60px;
@@ -186,6 +187,47 @@
                 height: 2px;
                 margin: 4px auto;
                 background-color: #FFFFFF;
+            }
+
+            .header__bar--top {
+
+            }
+
+            .header__bar--middle {
+
+            }
+
+            .header__bar--bottom {
+
+            }
+
+        .nav-expanded {
+
+        }
+            .nav-expanded .header__bar--top {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                transform-origin: center center;
+                transform: rotate(-45deg);
+            }
+
+            .nav-expanded .header__bar--middle {
+                display: none;
+            }
+
+            .nav-expanded .header__bar--bottom {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                transform-origin: center center;
+                transform: rotate(45deg);
             }
 
         .header__logo {
