@@ -6,7 +6,7 @@
         <title>Дашборд</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1657473385">
+        <link rel="stylesheet" href="../styles/style.css?1661167040">
     </head>
     <body>
 
@@ -18,313 +18,474 @@
         <![endif]-->
 
         <header class="header">
-
+            <div class="header__panel">
+                <button class="header__burger" type="button">
+                    <span class="header__bar header__bar--top"></span>
+                    <span class="header__bar header__bar--middle"></span>
+                    <span class="header__bar header__bar--bottom"></span>
+                </button>
+                <a class="header__logo" href="#">
+                    <svg class="header__emblem" width="138" height="26">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#logo"></use>
+                    </svg>
+                </a>
+                <button class="header__user" type="button">
+                    <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
+                        <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
+                    </svg>
+                    <span class="header__photo avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-48x48@2x.jpg 2x"
+                             src="../temp/person-f-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Tim Cook"
+                        >
+                    </span>
+                    <span class="header__name">Константин Константинопольский</span>
+                    <span class="header__level">Уровень 6</span>
+                </button>
+                <button class="header__notifications" type="button">
+                    <svg class="header__bell" width="20" height="20">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#bell"></use>
+                    </svg>
+                    <span class="header__updates dot">10 уведомлений</span>
+                </button>
+            </div>
         </header>
 
+        <div class="nav">
+            <button class="nav__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="nav__list">
+                <a class="nav__link nav__link--current" href="#">Dashboard</a>
+                <a class="nav__link" href="#">Тесты</a>
+                <a class="nav__link" href="#">Онлайн-классы</a>
+            </nav>
+        </div>
 
-        <div class="container">
-            <div class="textbook">
-                <div class="textbook__head">
-                    <a class="textbook__breadcrumbs next" href="test-1-list.html">
-                        Dashboard
-                    </a>
-                    <h1 class="textbook__heading title title--h5">
-                        Математика (профиль)
-                    </h1>
+        <div class="user">
+            <button class="user__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="user__close__list">
+                <a class="user__link" href="#">Профиль</a>
+                <a class="user__link" href="#">Мой прогресс</a>
+                <a class="user__link user__link--current" href="#">Настройки</a>
+                <a class="user__link" href="#">Платежи</a>
+            </nav>
+        </div>
+
+        <div class="notifications">
+            <div class="notifications__head">
+                <div class="notifications__heading title title--h6">
+                    Уведомления
                 </div>
-                <div class="textbook__body">
-                    <div class="textbook__content">
-                        <div class="textbook__column">
-                            <section class="textbook__section">
-                                <h2 class="textbook__sub-heading headline headline--2">
-                                    Как обучаться на платформе
-                                </h2>
-                                <div class="textbook__list">
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Вводное видео</div>
-                                        <div class="textbook__duration">12:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Стратегия обучения</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Как устроена платформа</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Советы по обучению</div>
-                                        <div class="textbook__duration">08:10</div>
-                                    </a>
-                                </div>
-                            </section>
-                            <section class="textbook__section">
-                                <h2 class="textbook__sub-heading headline headline--2">
-                                    Текстовые задачи
-                                </h2>
-                                <div class="textbook__list">
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#check"></use>
-                                        </svg>
-                                        <div class="textbook__label">Движение</div>
-                                        <div class="textbook__duration">12:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#check"></use>
-                                        </svg>
-                                        <div class="textbook__label">Работа</div>
-                                        <div class="textbook__duration">7:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Секреты решения текстовых задач на движение и работу</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Тренажер задач</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Проценты</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Сплавы, смеси, растворы</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Движение по окружности</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Тренажер задач</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                </div>
-                            </section>
-                            <section class="textbook__section">
-                                <h2 class="textbook__sub-heading headline headline--2">
-                                    Чтение графиков и диаграмм
-                                </h2>
-                                <div class="textbook__list">
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#check"></use>
-                                        </svg>
-                                        <div class="textbook__label">Как читать графики и диаграммы</div>
-                                        <div class="textbook__duration">12:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Примеры решения задач</div>
-                                        <div class="textbook__duration">0/20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Тренажер задач</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Проверочный тест</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="textbook__column">
-                            <section class="textbook__section">
-                                <h2 class="textbook__sub-heading headline headline--2">
-                                    Чтение графиков и диаграмм
-                                </h2>
-                                <div class="textbook__list">
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#check"></use>
-                                        </svg>
-                                        <div class="textbook__label">Как читать графики и диаграммы</div>
-                                        <div class="textbook__duration">12:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Примеры решения задач</div>
-                                        <div class="textbook__duration">0/20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Тренажер задач</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Проверочный тест</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                </div>
-                            </section>
-                            <section class="textbook__section">
-                                <h2 class="textbook__sub-heading headline headline--2">
-                                    Теория вероятностей
-                                </h2>
-                                <div class="textbook__list">
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#check"></use>
-                                        </svg>
-                                        <div class="textbook__label">Как читать графики и диаграммы</div>
-                                        <div class="textbook__duration">12:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Примеры решения задач</div>
-                                        <div class="textbook__duration">0/20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Тренажер задач</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Проверочный тест</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                </div>
-                            </section>
-                            <section class="textbook__section">
-                                <h2 class="textbook__sub-heading headline headline--2">
-                                    Стереометрия
-                                </h2>
-                                <div class="textbook__list">
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#check"></use>
-                                        </svg>
-                                        <div class="textbook__label">Как читать графики и диаграммы</div>
-                                        <div class="textbook__duration">12:10</div>
-                                    </a>
-                                    <a class="textbook__item" href="#">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#bullet-circle"></use>
-                                        </svg>
-                                        <div class="textbook__label">Примеры решения задач</div>
-                                        <div class="textbook__duration">0/20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Тренажер задач</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                    <a class="textbook__item textbook__item--disabled">
-                                        <svg class="textbook__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657473385#lock2"></use>
-                                        </svg>
-                                        <div class="textbook__label">Проверочный тест</div>
-                                        <div class="textbook__duration">07:20</div>
-                                    </a>
-                                </div>
-                            </section>
-                        </div>
+                <button class="notifications__close close-in-header" type="button">
+                    <svg class="close-in-header__cross" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="notifications__list">
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
                     </div>
-                    <div class="textbook__sidebar">
-                        <div class="textbook__card course-card">
-                            <div class="course-card__prefix caption">
-                                Онлайн-занятие через 03:59
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="container">
+                <div class="textbook">
+                    <div class="textbook__head">
+                        <a class="textbook__breadcrumbs next" href="test-1-list.html">
+                            Dashboard
+                        </a>
+                        <h1 class="textbook__heading title title--h5">
+                            Математика (профиль)
+                        </h1>
+                    </div>
+                    <div class="textbook__body">
+                        <div class="textbook__content">
+                            <div class="textbook__column">
+                                <section class="textbook__section">
+                                    <h2 class="textbook__sub-heading headline headline--2">
+                                        Как обучаться на платформе
+                                    </h2>
+                                    <div class="textbook__list">
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Вводное видео</div>
+                                            <div class="textbook__duration">12:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Стратегия обучения</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Как устроена платформа</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Советы по обучению</div>
+                                            <div class="textbook__duration">08:10</div>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="textbook__section">
+                                    <h2 class="textbook__sub-heading headline headline--2">
+                                        Текстовые задачи
+                                    </h2>
+                                    <div class="textbook__list">
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#check"></use>
+                                            </svg>
+                                            <div class="textbook__label">Движение</div>
+                                            <div class="textbook__duration">12:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#check"></use>
+                                            </svg>
+                                            <div class="textbook__label">Работа</div>
+                                            <div class="textbook__duration">7:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Секреты решения текстовых задач на движение и работу</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Тренажер задач</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Проценты</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Сплавы, смеси, растворы</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Движение по окружности</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Тренажер задач</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="textbook__section">
+                                    <h2 class="textbook__sub-heading headline headline--2">
+                                        Чтение графиков и диаграмм
+                                    </h2>
+                                    <div class="textbook__list">
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#check"></use>
+                                            </svg>
+                                            <div class="textbook__label">Как читать графики и диаграммы</div>
+                                            <div class="textbook__duration">12:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Примеры решения задач</div>
+                                            <div class="textbook__duration">0/20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Тренажер задач</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Проверочный тест</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
-                            <div class="course-card__heading headline headline--2">
-                                Планиметрия. Часть 1.
+                            <div class="textbook__column">
+                                <section class="textbook__section">
+                                    <h2 class="textbook__sub-heading headline headline--2">
+                                        Чтение графиков и диаграмм
+                                    </h2>
+                                    <div class="textbook__list">
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#check"></use>
+                                            </svg>
+                                            <div class="textbook__label">Как читать графики и диаграммы</div>
+                                            <div class="textbook__duration">12:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Примеры решения задач</div>
+                                            <div class="textbook__duration">0/20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Тренажер задач</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Проверочный тест</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="textbook__section">
+                                    <h2 class="textbook__sub-heading headline headline--2">
+                                        Теория вероятностей
+                                    </h2>
+                                    <div class="textbook__list">
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#check"></use>
+                                            </svg>
+                                            <div class="textbook__label">Как читать графики и диаграммы</div>
+                                            <div class="textbook__duration">12:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Примеры решения задач</div>
+                                            <div class="textbook__duration">0/20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Тренажер задач</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Проверочный тест</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="textbook__section">
+                                    <h2 class="textbook__sub-heading headline headline--2">
+                                        Стереометрия
+                                    </h2>
+                                    <div class="textbook__list">
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#check"></use>
+                                            </svg>
+                                            <div class="textbook__label">Как читать графики и диаграммы</div>
+                                            <div class="textbook__duration">12:10</div>
+                                        </a>
+                                        <a class="textbook__item" href="#">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#bullet-circle"></use>
+                                            </svg>
+                                            <div class="textbook__label">Примеры решения задач</div>
+                                            <div class="textbook__duration">0/20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Тренажер задач</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                        <a class="textbook__item textbook__item--disabled">
+                                            <svg class="textbook__icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1661167040#lock2"></use>
+                                            </svg>
+                                            <div class="textbook__label">Проверочный тест</div>
+                                            <div class="textbook__duration">07:20</div>
+                                        </a>
+                                    </div>
+                                </section>
                             </div>
-                            <a class="course-card__more button button--larger button--transparent" href="#">
-                                Войти в класс
-                            </a>
                         </div>
-                        <div class="textbook__progress advancing math-border">
-                            <h2 class="advancing__heading headline headline--2">
-                                Общий прогресс
-                            </h2>
-                            <div class="advancing__body">
-                                <div class="advancing__section">
-                                    <div class="advancing__label">
-                                        Решено задач
-                                    </div>
-                                    <div class="advancing__counter headline headline--2">
-                                        158/945
-                                    </div>
-                                    <div class="advancing__visualisation bar">
-                                        <div class="bar__progress math-background" style="width: 20%;"></div>
-                                    </div>
+                        <div class="textbook__sidebar">
+                            <div class="textbook__card course-card">
+                                <div class="course-card__prefix caption">
+                                    Онлайн-занятие через 03:59
                                 </div>
-                                <div class="advancing__section">
-                                    <div class="advancing__label">
-                                        Пройдено тем
-                                    </div>
-                                    <div class="advancing__counter headline headline--2">
-                                        12/32
-                                    </div>
-                                    <div class="advancing__visualisation bar">
-                                        <div class="bar__progress math-background" style="width: 20%;"></div>
-                                    </div>
+                                <div class="course-card__heading headline headline--2">
+                                    Планиметрия. Часть 1.
                                 </div>
-                                <div class="advancing__section">
-                                    <div class="advancing__label">
-                                        Пройдено тестов
+                                <a class="course-card__more button button--larger button--transparent" href="#">
+                                    Войти в класс
+                                </a>
+                            </div>
+                            <div class="textbook__progress advancing math-border">
+                                <h2 class="advancing__heading headline headline--2">
+                                    Общий прогресс
+                                </h2>
+                                <div class="advancing__body">
+                                    <div class="advancing__section">
+                                        <div class="advancing__label">
+                                            Решено задач
+                                        </div>
+                                        <div class="advancing__counter headline headline--2">
+                                            158/945
+                                        </div>
+                                        <div class="advancing__visualisation bar">
+                                            <div class="bar__progress math-background" style="width: 20%;"></div>
+                                        </div>
                                     </div>
-                                    <div class="advancing__counter headline headline--2">
-                                        0/10
+                                    <div class="advancing__section">
+                                        <div class="advancing__label">
+                                            Пройдено тем
+                                        </div>
+                                        <div class="advancing__counter headline headline--2">
+                                            12/32
+                                        </div>
+                                        <div class="advancing__visualisation bar">
+                                            <div class="bar__progress math-background" style="width: 20%;"></div>
+                                        </div>
                                     </div>
-                                    <div class="advancing__visualisation bar">
-                                        <div class="bar__progress math-background" style="width: 20%;"></div>
+                                    <div class="advancing__section">
+                                        <div class="advancing__label">
+                                            Пройдено тестов
+                                        </div>
+                                        <div class="advancing__counter headline headline--2">
+                                            0/10
+                                        </div>
+                                        <div class="advancing__visualisation bar">
+                                            <div class="bar__progress math-background" style="width: 20%;"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -340,14 +501,15 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_global.js?1657473385"></script>
-        <script src="../scripts/_mfp.js?1657473385"></script>
-        <script src="../scripts/_scrollbar.js?1657473385"></script>
-        <script src="../scripts/_room.js?1657473385"></script>
-        <script src="../scripts/_mobile-collapse.js?1657473385"></script>
-        <script src="../scripts/_accordion.js?1657473385"></script>
-        <script src="../scripts/_schedule.js?1657473385"></script>
-        <script src="../scripts/_dropdown.js?1657473385"></script>
+        <script src="../scripts/_global.js?1661167040"></script>
+        <script src="../scripts/_mfp.js?1661167040"></script>
+        <script src="../scripts/_scrollbar.js?1661167040"></script>
+        <script src="../scripts/_room.js?1661167040"></script>
+        <script src="../scripts/_mobile-collapse.js?1661167040"></script>
+        <script src="../scripts/_accordion.js?1661167040"></script>
+        <script src="../scripts/_schedule.js?1661167040"></script>
+        <script src="../scripts/_dropdown.js?1661167040"></script>
+        <script src="../scripts/_header.js?1661167040"></script>
 
     </body>
 </html>

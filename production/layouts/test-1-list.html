@@ -6,7 +6,7 @@
         <title>Тесты</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1657473385">
+        <link rel="stylesheet" href="../styles/style.css?1661167040">
     </head>
     <body>
 
@@ -18,157 +18,318 @@
         <![endif]-->
 
         <header class="header">
-
+            <div class="header__panel">
+                <button class="header__burger" type="button">
+                    <span class="header__bar header__bar--top"></span>
+                    <span class="header__bar header__bar--middle"></span>
+                    <span class="header__bar header__bar--bottom"></span>
+                </button>
+                <a class="header__logo" href="#">
+                    <svg class="header__emblem" width="138" height="26">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#logo"></use>
+                    </svg>
+                </a>
+                <button class="header__user" type="button">
+                    <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
+                        <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
+                    </svg>
+                    <span class="header__photo avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-48x48@2x.jpg 2x"
+                             src="../temp/person-f-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Tim Cook"
+                        >
+                    </span>
+                    <span class="header__name">Константин Константинопольский</span>
+                    <span class="header__level">Уровень 6</span>
+                </button>
+                <button class="header__notifications" type="button">
+                    <svg class="header__bell" width="20" height="20">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#bell"></use>
+                    </svg>
+                    <span class="header__updates dot">10 уведомлений</span>
+                </button>
+            </div>
         </header>
 
+        <div class="nav">
+            <button class="nav__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="nav__list">
+                <a class="nav__link nav__link--current" href="#">Dashboard</a>
+                <a class="nav__link" href="#">Тесты</a>
+                <a class="nav__link" href="#">Онлайн-классы</a>
+            </nav>
+        </div>
 
-        <div class="container">
-            <div class="tests-list">
-                <div class="tests-list__head">
-                    <h2 class="tests-list__heading title title--h5">
-                        Мои онлайн-классы
-                    </h2>
+        <div class="user">
+            <button class="user__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="user__close__list">
+                <a class="user__link" href="#">Профиль</a>
+                <a class="user__link" href="#">Мой прогресс</a>
+                <a class="user__link user__link--current" href="#">Настройки</a>
+                <a class="user__link" href="#">Платежи</a>
+            </nav>
+        </div>
+
+        <div class="notifications">
+            <div class="notifications__head">
+                <div class="notifications__heading title title--h6">
+                    Уведомления
                 </div>
-                <div class="tests-list__body">
-                    <div class="tests-list__listing">
-                        <div class="test-preview test-preview--complete">
-                            <a class="test-preview__link" href="test-2-intro.html">
-                                <div class="test-preview__type">
-                                    Пробный ЕГЭ
-                                </div>
-                                <h3 class="test-preview__heading headline headline--1">
-                                    Базовый ЕГЭ по математике для учеников 10 и 11 классов
-                                </h3>
-                                <div class="test-preview__footer">
-                                    <div class="test-preview__note headline headline--1">
-                                        52-62 балла
+                <button class="notifications__close close-in-header" type="button">
+                    <svg class="close-in-header__cross" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="notifications__list">
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="container">
+                <div class="tests-list">
+                    <div class="tests-list__head">
+                        <h2 class="tests-list__heading title title--h5">
+                            Мои онлайн-классы
+                        </h2>
+                    </div>
+                    <div class="tests-list__body">
+                        <div class="tests-list__listing">
+                            <div class="test-preview test-preview--complete">
+                                <a class="test-preview__link" href="test-2-intro.html">
+                                    <div class="test-preview__type">
+                                        Пробный ЕГЭ
                                     </div>
-                                    <div class="test-preview__summary caption">
-                                        Верно 10 из 20 (50%)
+                                    <h3 class="test-preview__heading headline headline--1">
+                                        Базовый ЕГЭ по математике для учеников 10 и 11 классов
+                                    </h3>
+                                    <div class="test-preview__footer">
+                                        <div class="test-preview__note headline headline--1">
+                                            52-62 балла
+                                        </div>
+                                        <div class="test-preview__summary caption">
+                                            Верно 10 из 20 (50%)
+                                        </div>
                                     </div>
-                                </div>
-                                <img class="test-preview__status"
+                                    <img class="test-preview__status"
 <svg>
-    <use xlink:href="../symbols/symbols.svg?1657473385#check-circle-green"></use>
+    <use xlink:href="../symbols/symbols.svg?1661167040#check-circle-green"></use>
 </svg>
-                                     width="24"
-                                     height="24"
-                                     alt=""
-                                >
-                            </a>
-                        </div>
-                        <div class="test-preview">
-                            <a class="test-preview__link" href="test-2-intro.html">
-                                <div class="test-preview__type">
-                                    Промежуточный тест
-                                </div>
-                                <h3 class="test-preview__heading headline headline--1">
-                                    Проверочный тест по текстовым задачам
-                                </h3>
-                                <div class="test-preview__handler button button--secondary">
-                                    Начать
-                                </div>
-                                <div class="test-preview__footer">
-                                    <div class="test-preview__summary caption">
-                                        ~3ч 30мин
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="test-preview">
-                            <a class="test-preview__link" href="test-2-intro.html">
-                                <div class="test-preview__type">
-                                    Полный ЕГЭ
-                                </div>
-                                <h3 class="test-preview__heading headline headline--1">
-                                    Проверочный тест по графикам
-                                </h3>
-                                <div class="test-preview__handler button button--secondary">
-                                    Продолжить
-                                </div>
-                                <div class="test-preview__footer">
-                                    <div class="test-preview__summary caption">
-                                        ~20 мин
-                                    </div>
-                                </div>
-                                <svg class="test-preview__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle stroke="#F5F3EE" stroke-width="4" cx="23" cy="23" r="21"></circle>
-                                    <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#D6D2C8" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="test-preview">
-                            <a class="test-preview__link" href="test-2-intro.html">
-                                <div class="test-preview__type">
-                                    Полный ЕГЭ
-                                </div>
-                                <h3 class="test-preview__heading headline headline--1">
-                                    Полный ЕГЭ №2 с проверкой
-                                </h3>
-                                <div class="test-preview__handler button button--secondary">
-                                    Продолжить
-                                </div>
-                                <div class="test-preview__footer">
-                                    <div class="test-preview__summary caption">
-                                        ~20 мин
-                                    </div>
-                                </div>
-                                <svg class="test-preview__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle stroke="#F5F3EE" stroke-width="4" cx="23" cy="23" r="21"></circle>
-                                    <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#D6D2C8" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="test-preview test-preview--disabled">
-                            <div class="test-preview__link">
-                                <div class="test-preview__type">
-                                    Промежуточный тест
-                                </div>
-                                <h3 class="test-preview__heading headline headline--1">
-                                    Проверочный тест по планиметрии
-                                </h3>
-                                <div class="test-preview__footer">
-                                    <div class="test-preview__summary caption">
-                                        Будет доступен после прохождения темы «Планиметрия»
-                                    </div>
-                                </div>
+                                         width="24"
+                                         height="24"
+                                         alt=""
+                                    >
+                                </a>
                             </div>
-                            <svg class="test-preview__status" width="24" height="24">
-                                <use xlink:href="../symbols/symbols.svg?1657473385#lock-grey"></use>
-                            </svg>
-                        </div>
-                        <div class="test-preview test-preview--not-purchased">
-                            <a class="test-preview__link" href="test-2-intro.html">
-                                <div class="test-preview__type">
-                                    Промежуточный тест
-                                </div>
-                                <h3 class="test-preview__heading headline headline--1">
-                                    Полный ЕГЭ №2 с проверкой
-                                </h3>
-                                <div class="test-preview__handler button button--secondary">
-                                    Купить
-                                </div>
-                                <div class="test-preview__footer">
-                                    <div class="test-preview__summary caption">
-                                        Станет доступен сразу после оплаты
+                            <div class="test-preview">
+                                <a class="test-preview__link" href="test-2-intro.html">
+                                    <div class="test-preview__type">
+                                        Промежуточный тест
+                                    </div>
+                                    <h3 class="test-preview__heading headline headline--1">
+                                        Проверочный тест по текстовым задачам
+                                    </h3>
+                                    <div class="test-preview__handler button button--secondary">
+                                        Начать
+                                    </div>
+                                    <div class="test-preview__footer">
+                                        <div class="test-preview__summary caption">
+                                            ~3ч 30мин
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="test-preview">
+                                <a class="test-preview__link" href="test-2-intro.html">
+                                    <div class="test-preview__type">
+                                        Полный ЕГЭ
+                                    </div>
+                                    <h3 class="test-preview__heading headline headline--1">
+                                        Проверочный тест по графикам
+                                    </h3>
+                                    <div class="test-preview__handler button button--secondary">
+                                        Продолжить
+                                    </div>
+                                    <div class="test-preview__footer">
+                                        <div class="test-preview__summary caption">
+                                            ~20 мин
+                                        </div>
+                                    </div>
+                                    <svg class="test-preview__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle stroke="#F5F3EE" stroke-width="4" cx="23" cy="23" r="21"></circle>
+                                        <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#D6D2C8" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="test-preview">
+                                <a class="test-preview__link" href="test-2-intro.html">
+                                    <div class="test-preview__type">
+                                        Полный ЕГЭ
+                                    </div>
+                                    <h3 class="test-preview__heading headline headline--1">
+                                        Полный ЕГЭ №2 с проверкой
+                                    </h3>
+                                    <div class="test-preview__handler button button--secondary">
+                                        Продолжить
+                                    </div>
+                                    <div class="test-preview__footer">
+                                        <div class="test-preview__summary caption">
+                                            ~20 мин
+                                        </div>
+                                    </div>
+                                    <svg class="test-preview__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle stroke="#F5F3EE" stroke-width="4" cx="23" cy="23" r="21"></circle>
+                                        <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#D6D2C8" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="test-preview test-preview--disabled">
+                                <div class="test-preview__link">
+                                    <div class="test-preview__type">
+                                        Промежуточный тест
+                                    </div>
+                                    <h3 class="test-preview__heading headline headline--1">
+                                        Проверочный тест по планиметрии
+                                    </h3>
+                                    <div class="test-preview__footer">
+                                        <div class="test-preview__summary caption">
+                                            Будет доступен после прохождения темы «Планиметрия»
+                                        </div>
                                     </div>
                                 </div>
                                 <svg class="test-preview__status" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1657473385#lock-grey"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1661167040#lock-grey"></use>
                                 </svg>
-                            </a>
+                            </div>
+                            <div class="test-preview test-preview--not-purchased">
+                                <a class="test-preview__link" href="test-2-intro.html">
+                                    <div class="test-preview__type">
+                                        Промежуточный тест
+                                    </div>
+                                    <h3 class="test-preview__heading headline headline--1">
+                                        Полный ЕГЭ №2 с проверкой
+                                    </h3>
+                                    <div class="test-preview__handler button button--secondary">
+                                        Купить
+                                    </div>
+                                    <div class="test-preview__footer">
+                                        <div class="test-preview__summary caption">
+                                            Станет доступен сразу после оплаты
+                                        </div>
+                                    </div>
+                                    <svg class="test-preview__status" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1661167040#lock-grey"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tests-list__sidebar">
-                        <div class="tests-list__nav accordion accordion--vertical">
-                            <button class="accordion__handler" type="button">
-                                Математика
-                            </button>
-                            <nav class="accordion__list">
-                                <a class="accordion__link accordion__link--current" href="#">Математика</a>
-                                <a class="accordion__link" href="#">Русский язык</a>
-                                <a class="accordion__link" href="#">Информатика</a>
-                            </nav>
+                        <div class="tests-list__sidebar">
+                            <div class="tests-list__nav accordion accordion--vertical">
+                                <button class="accordion__handler" type="button">
+                                    Математика
+                                </button>
+                                <nav class="accordion__list">
+                                    <a class="accordion__link accordion__link--current" href="#">Математика</a>
+                                    <a class="accordion__link" href="#">Русский язык</a>
+                                    <a class="accordion__link" href="#">Информатика</a>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,14 +342,15 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_global.js?1657473385"></script>
-        <script src="../scripts/_mfp.js?1657473385"></script>
-        <script src="../scripts/_scrollbar.js?1657473385"></script>
-        <script src="../scripts/_room.js?1657473385"></script>
-        <script src="../scripts/_mobile-collapse.js?1657473385"></script>
-        <script src="../scripts/_accordion.js?1657473385"></script>
-        <script src="../scripts/_schedule.js?1657473385"></script>
-        <script src="../scripts/_dropdown.js?1657473385"></script>
+        <script src="../scripts/_global.js?1661167040"></script>
+        <script src="../scripts/_mfp.js?1661167040"></script>
+        <script src="../scripts/_scrollbar.js?1661167040"></script>
+        <script src="../scripts/_room.js?1661167040"></script>
+        <script src="../scripts/_mobile-collapse.js?1661167040"></script>
+        <script src="../scripts/_accordion.js?1661167040"></script>
+        <script src="../scripts/_schedule.js?1661167040"></script>
+        <script src="../scripts/_dropdown.js?1661167040"></script>
+        <script src="../scripts/_header.js?1661167040"></script>
 
     </body>
 </html>

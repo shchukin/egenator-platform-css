@@ -6,7 +6,7 @@
         <title>Платежная информация</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1657473385">
+        <link rel="stylesheet" href="../styles/style.css?1661167040">
     </head>
     <body>
 
@@ -18,107 +18,268 @@
         <![endif]-->
 
         <header class="header">
-
+            <div class="header__panel">
+                <button class="header__burger" type="button">
+                    <span class="header__bar header__bar--top"></span>
+                    <span class="header__bar header__bar--middle"></span>
+                    <span class="header__bar header__bar--bottom"></span>
+                </button>
+                <a class="header__logo" href="#">
+                    <svg class="header__emblem" width="138" height="26">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#logo"></use>
+                    </svg>
+                </a>
+                <button class="header__user" type="button">
+                    <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
+                        <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
+                    </svg>
+                    <span class="header__photo avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-48x48@2x.jpg 2x"
+                             src="../temp/person-f-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Tim Cook"
+                        >
+                    </span>
+                    <span class="header__name">Константин Константинопольский</span>
+                    <span class="header__level">Уровень 6</span>
+                </button>
+                <button class="header__notifications" type="button">
+                    <svg class="header__bell" width="20" height="20">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#bell"></use>
+                    </svg>
+                    <span class="header__updates dot">10 уведомлений</span>
+                </button>
+            </div>
         </header>
 
+        <div class="nav">
+            <button class="nav__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="nav__list">
+                <a class="nav__link nav__link--current" href="#">Dashboard</a>
+                <a class="nav__link" href="#">Тесты</a>
+                <a class="nav__link" href="#">Онлайн-классы</a>
+            </nav>
+        </div>
 
-        <div class="profile">
-            <div class="profile__head-wrap container container--full-width">
-                <div class="profile__head">
-                    <div class="profile__breadcrumbs breadcrumbs">
-                        <div class="breadcrumbs__item">
-                            <a class="next" href="#">Dashboard</a>
-                        </div>
-                    </div>
-                    <h1 class="profile__heading title title--h5">
-                        Платежная информация
-                    </h1>
+        <div class="user">
+            <button class="user__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="user__close__list">
+                <a class="user__link" href="#">Профиль</a>
+                <a class="user__link" href="#">Мой прогресс</a>
+                <a class="user__link user__link--current" href="#">Настройки</a>
+                <a class="user__link" href="#">Платежи</a>
+            </nav>
+        </div>
+
+        <div class="notifications">
+            <div class="notifications__head">
+                <div class="notifications__heading title title--h6">
+                    Уведомления
                 </div>
+                <button class="notifications__close close-in-header" type="button">
+                    <svg class="close-in-header__cross" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                    </svg>
+                </button>
             </div>
-            <div class="profile__body-wrap container">
-                <div class="profile__body">
-                    <div class="profile__content">
-                        <section class="profile__section">
-                            <h2 class="profile__sub-heading title title--h6">
-                                Активные подписки
-                            </h2>
-                            <div class="profile__subscriptions">
-                                <article class="profile__paid-course card card--less-rounding math-border">
-                                    <div class="card__heading headline headline--2">
-                                        Тренажер задач по математике
-                                    </div>
-                                    <div class="card__footer">
-                                        Доступ на 3 месяца - 4 500 руб.<br>
-                                        Заканчивается через 27 дней
-                                    </div>
-                                </article>
-                                <article class="profile__paid-course card card--less-rounding russian-border">
-                                    <div class="card__heading headline headline--2">
-                                        Тренажер задач по русскому языку
-                                    </div>
-                                    <div class="card__footer">
-                                        Доступ на 1 месяц - 1 500 руб.<br>
-                                        Заканчивается через 15 дней
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-                        <section class="profile__section">
-                            <h2 class="profile__sub-heading title title--h6">
-                                История платежей
-                            </h2>
-                            <div class="profile__payments">
-                                <div class="table table--scrollable">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Дата платежа</th>
-                                                <th>Предмет</th>
-                                                <th>Описание</th>
-                                                <th>Код транзакции</th>
-                                                <th>Доступ до</th>
-                                                <th>Стоимость</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>13 сент 2021</td>
-                                                <td>Математика</td>
-                                                <td>Доступ на 3 месяца</td>
-                                                <td>jdshju76J37QCBWU</td>
-                                                <td>29 дек 2021</td>
-                                                <td>4 500 руб.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>17 сент 2021</td>
-                                                <td>Русский язык</td>
-                                                <td>Недостаточно средств для оплаты</td>
-                                                <td>2886374632sj3333</td>
-                                                <td>29 дек 2021</td>
-                                                <td>4 500 руб.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>18 дек 2021</td>
-                                                <td>Математика</td>
-                                                <td>Доступ на 1 месяц</td>
-                                                <td>jdshju76J37QCBWU</td>
-                                                <td>29 дек 2021</td>
-                                                <td>4 500 руб.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </section>
+            <div class="notifications__list">
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
                     </div>
-                    <div class="profile__sidebar">
-                        <div class="profile__side-section card">
-                            <div class="card__heading headline headline--2">
-                                Способ оплаты
-                                <br>Visa карта *7632
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="profile">
+                <div class="profile__head-wrap container container--full-width">
+                    <div class="profile__head">
+                        <div class="profile__breadcrumbs breadcrumbs">
+                            <div class="breadcrumbs__item">
+                                <a class="next" href="#">Dashboard</a>
                             </div>
-                            <div class="card__footer card__footer--larger">
-                                <a class="link link--text-alike link--classic" href="#">Сменить карту</a>
+                        </div>
+                        <h1 class="profile__heading title title--h5">
+                            Платежная информация
+                        </h1>
+                    </div>
+                </div>
+                <div class="profile__body-wrap container">
+                    <div class="profile__body">
+                        <div class="profile__content">
+                            <section class="profile__section">
+                                <h2 class="profile__sub-heading title title--h6">
+                                    Активные подписки
+                                </h2>
+                                <div class="profile__subscriptions">
+                                    <article class="profile__paid-course card card--less-rounding math-border">
+                                        <div class="card__heading headline headline--2">
+                                            Тренажер задач по математике
+                                        </div>
+                                        <div class="card__footer">
+                                            Доступ на 3 месяца - 4 500 руб.<br>
+                                            Заканчивается через 27 дней
+                                        </div>
+                                    </article>
+                                    <article class="profile__paid-course card card--less-rounding russian-border">
+                                        <div class="card__heading headline headline--2">
+                                            Тренажер задач по русскому языку
+                                        </div>
+                                        <div class="card__footer">
+                                            Доступ на 1 месяц - 1 500 руб.<br>
+                                            Заканчивается через 15 дней
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                            <section class="profile__section">
+                                <h2 class="profile__sub-heading title title--h6">
+                                    История платежей
+                                </h2>
+                                <div class="profile__payments">
+                                    <div class="table table--scrollable">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Дата платежа</th>
+                                                    <th>Предмет</th>
+                                                    <th>Описание</th>
+                                                    <th>Код транзакции</th>
+                                                    <th>Доступ до</th>
+                                                    <th>Стоимость</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>13 сент 2021</td>
+                                                    <td>Математика</td>
+                                                    <td>Доступ на 3 месяца</td>
+                                                    <td>jdshju76J37QCBWU</td>
+                                                    <td>29 дек 2021</td>
+                                                    <td>4 500 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17 сент 2021</td>
+                                                    <td>Русский язык</td>
+                                                    <td>Недостаточно средств для оплаты</td>
+                                                    <td>2886374632sj3333</td>
+                                                    <td>29 дек 2021</td>
+                                                    <td>4 500 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18 дек 2021</td>
+                                                    <td>Математика</td>
+                                                    <td>Доступ на 1 месяц</td>
+                                                    <td>jdshju76J37QCBWU</td>
+                                                    <td>29 дек 2021</td>
+                                                    <td>4 500 руб.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="profile__sidebar">
+                            <div class="profile__side-section card">
+                                <div class="card__heading headline headline--2">
+                                    Способ оплаты
+                                    <br>Visa карта *7632
+                                </div>
+                                <div class="card__footer card__footer--larger">
+                                    <a class="link link--text-alike link--classic" href="#">Сменить карту</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,18 +293,19 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_global.js?1657473385"></script>
-        <script src="../scripts/_mfp.js?1657473385"></script>
-        <script src="../scripts/_scrollbar.js?1657473385"></script>
-        <script src="../scripts/_room.js?1657473385"></script>
-        <script src="../scripts/_mobile-collapse.js?1657473385"></script>
-        <script src="../scripts/_accordion.js?1657473385"></script>
-        <script src="../scripts/_schedule.js?1657473385"></script>
-        <script src="../scripts/_dropdown.js?1657473385"></script>
-        <script src="../scripts/_progress.js?1657473385"></script>
-        <script src="../scripts/_task.js?1657473385"></script>
-        <script src="../scripts/_test.js?1657473385"></script>
-        <script src="../scripts/_recommendations.js?1657473385"></script>
+        <script src="../scripts/_global.js?1661167040"></script>
+        <script src="../scripts/_mfp.js?1661167040"></script>
+        <script src="../scripts/_scrollbar.js?1661167040"></script>
+        <script src="../scripts/_room.js?1661167040"></script>
+        <script src="../scripts/_mobile-collapse.js?1661167040"></script>
+        <script src="../scripts/_accordion.js?1661167040"></script>
+        <script src="../scripts/_schedule.js?1661167040"></script>
+        <script src="../scripts/_dropdown.js?1661167040"></script>
+        <script src="../scripts/_header.js?1661167040"></script>
+        <script src="../scripts/_progress.js?1661167040"></script>
+        <script src="../scripts/_task.js?1661167040"></script>
+        <script src="../scripts/_test.js?1661167040"></script>
+        <script src="../scripts/_recommendations.js?1661167040"></script>
 
     </body>
 </html>

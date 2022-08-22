@@ -6,7 +6,7 @@
         <title>Дашборд</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1657473385">
+        <link rel="stylesheet" href="../styles/style.css?1661167040">
     </head>
     <body>
 
@@ -18,136 +18,297 @@
         <![endif]-->
 
         <header class="header">
-
+            <div class="header__panel">
+                <button class="header__burger" type="button">
+                    <span class="header__bar header__bar--top"></span>
+                    <span class="header__bar header__bar--middle"></span>
+                    <span class="header__bar header__bar--bottom"></span>
+                </button>
+                <a class="header__logo" href="#">
+                    <svg class="header__emblem" width="138" height="26">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#logo"></use>
+                    </svg>
+                </a>
+                <button class="header__user" type="button">
+                    <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
+                        <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
+                    </svg>
+                    <span class="header__photo avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-48x48@2x.jpg 2x"
+                             src="../temp/person-f-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Tim Cook"
+                        >
+                    </span>
+                    <span class="header__name">Константин Константинопольский</span>
+                    <span class="header__level">Уровень 6</span>
+                </button>
+                <button class="header__notifications" type="button">
+                    <svg class="header__bell" width="20" height="20">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#bell"></use>
+                    </svg>
+                    <span class="header__updates dot">10 уведомлений</span>
+                </button>
+            </div>
         </header>
 
+        <div class="nav">
+            <button class="nav__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="nav__list">
+                <a class="nav__link nav__link--current" href="#">Dashboard</a>
+                <a class="nav__link" href="#">Тесты</a>
+                <a class="nav__link" href="#">Онлайн-классы</a>
+            </nav>
+        </div>
 
-        <div class="container">
-            <div class="dashboard">
-                <div class="dashboard__body">
-                    <div class="dashboard__content">
-                        <h1 class="dashboard__heading title title--h5">
-                            Привет, София
-                        </h1>
-                        <div class="dashboard__list">
-                            <a class="dashboard__item colorful-card colorful-card--math" href="#">
-                                <h2 class="colorful-card__heading title title--h6">
-                                    Математика (профиль)
-                                </h2>
-                                <div class="colorful-card__addition">
-                                    <div class="colorful-card__tag">Учебник</div>
-                                    <div class="colorful-card__tag">Тренажер задач</div>
-                                </div>
-                                <div class="colorful-card__button button button--secondary">
-                                    Продолжить
-                                </div>
-                                <svg class="colorful-card__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle stroke="rgba(255, 255, 255, 0.4)" stroke-width="4" cx="23" cy="23" r="21"></circle>
-                                    <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#F9F9F9" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
-                                </svg>
-                            </a>
-                            <a class="dashboard__item colorful-card colorful-card--russian" href="#">
-                                <h2 class="colorful-card__heading title title--h6">
-                                    Русский язык
-                                </h2>
-                                <div class="colorful-card__addition">
-                                    <div class="colorful-card__tag">Учебник</div>
-                                </div>
-                                <div class="colorful-card__button button button--secondary">
-                                    Начать
-                                </div>
-                                <svg class="colorful-card__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle stroke="rgba(255, 255, 255, 0.4)" stroke-width="4" cx="23" cy="23" r="21"></circle>
-                                    <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#F9F9F9" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
-                                </svg>
-                            </a>
-                            <a class="dashboard__item colorful-card colorful-card--informatics" href="#">
-                                <h2 class="colorful-card__heading title title--h6">
-                                    Информатика
-                                </h2>
-                                <div class="colorful-card__addition">
-                                    <div class="colorful-card__tag">Учебник</div>
-                                </div>
-                                <div class="colorful-card__button button button--secondary">
-                                    Начать
-                                </div>
-                                <svg class="colorful-card__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle stroke="rgba(255, 255, 255, 0.4)" stroke-width="4" cx="23" cy="23" r="21"></circle>
-                                    <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#F9F9F9" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
-                                </svg>
-                            </a>
-                        </div>
+        <div class="user">
+            <button class="user__close close-in-header" type="button">
+                <svg class="close-in-header__cross" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                </svg>
+            </button>
+            <nav class="user__close__list">
+                <a class="user__link" href="#">Профиль</a>
+                <a class="user__link" href="#">Мой прогресс</a>
+                <a class="user__link user__link--current" href="#">Настройки</a>
+                <a class="user__link" href="#">Платежи</a>
+            </nav>
+        </div>
+
+        <div class="notifications">
+            <div class="notifications__head">
+                <div class="notifications__heading title title--h6">
+                    Уведомления
+                </div>
+                <button class="notifications__close close-in-header" type="button">
+                    <svg class="close-in-header__cross" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1661167040#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="notifications__list">
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
                     </div>
-                    <div class="dashboard__sidebar">
-                        <h2 class="dashboard__sub-heading title title--h5">
-                            Задачи на&nbsp;сегодня
-                        </h2>
-                        <div class="dashboard__card course-card">
-                            <div class="course-card__prefix caption">
-                                Онлайн-занятие через 03:59
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-38x38@2x.jpg 2x"
+                             src="../temp/person-a-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Занятие по математике «Планиметрия. Часть 1.» начнется через 10 минут</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-38x38@2x.jpg 2x"
+                             src="../temp/person-b-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Открылся урок «Основные понятия» в теме «Теория Вероятностей»</div>
+                    <div class="notifications__note">Сегодня в 13:34</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+                <a class="notifications__item" href="#">
+                    <div class="notifications__preview avatar">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-38x38@2x.jpg 2x"
+                             src="../temp/person-f-38x38.jpg"
+                             width="38"
+                             height="38"
+                             alt="Tim Cook"
+                        >
+                    </div>
+                    <div class="notifications__message">Доступны материалы по курсу «Базовый ЕГЭ по математике для учеников 10 и 11 классов»</div>
+                    <div class="notifications__note">29 октября в 12:29</div>
+                    <span class="header__updates dot">Новое уведомление</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="container">
+                <div class="dashboard">
+                    <div class="dashboard__body">
+                        <div class="dashboard__content">
+                            <h1 class="dashboard__heading title title--h5">
+                                Привет, София
+                            </h1>
+                            <div class="dashboard__list">
+                                <a class="dashboard__item colorful-card colorful-card--math" href="#">
+                                    <h2 class="colorful-card__heading title title--h6">
+                                        Математика (профиль)
+                                    </h2>
+                                    <div class="colorful-card__addition">
+                                        <div class="colorful-card__tag">Учебник</div>
+                                        <div class="colorful-card__tag">Тренажер задач</div>
+                                    </div>
+                                    <div class="colorful-card__button button button--secondary">
+                                        Продолжить
+                                    </div>
+                                    <svg class="colorful-card__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle stroke="rgba(255, 255, 255, 0.4)" stroke-width="4" cx="23" cy="23" r="21"></circle>
+                                        <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#F9F9F9" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
+                                    </svg>
+                                </a>
+                                <a class="dashboard__item colorful-card colorful-card--russian" href="#">
+                                    <h2 class="colorful-card__heading title title--h6">
+                                        Русский язык
+                                    </h2>
+                                    <div class="colorful-card__addition">
+                                        <div class="colorful-card__tag">Учебник</div>
+                                    </div>
+                                    <div class="colorful-card__button button button--secondary">
+                                        Начать
+                                    </div>
+                                    <svg class="colorful-card__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle stroke="rgba(255, 255, 255, 0.4)" stroke-width="4" cx="23" cy="23" r="21"></circle>
+                                        <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#F9F9F9" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
+                                    </svg>
+                                </a>
+                                <a class="dashboard__item colorful-card colorful-card--informatics" href="#">
+                                    <h2 class="colorful-card__heading title title--h6">
+                                        Информатика
+                                    </h2>
+                                    <div class="colorful-card__addition">
+                                        <div class="colorful-card__tag">Учебник</div>
+                                    </div>
+                                    <div class="colorful-card__button button button--secondary">
+                                        Начать
+                                    </div>
+                                    <svg class="colorful-card__progress round-loading round-loading--animated" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle stroke="rgba(255, 255, 255, 0.4)" stroke-width="4" cx="23" cy="23" r="21"></circle>
+                                        <circle id="random-offset" stroke-dashoffset="98.96" stroke-dasharray="131.9468" stroke="#F9F9F9" stroke-width="4" cx="23" cy="23" r="21" transform="rotate(-90)" transform-origin="23 23"></circle>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="course-card__heading headline headline--2">
-                                Планиметрия. Часть 1.
-                            </div>
-                            <a class="course-card__more button button--larger button--transparent" href="#">
-                                Войти в класс
-                            </a>
                         </div>
-                        <div class="dashboard__calendar my-day">
-                            <div class="my-day__heading title title--h6">
-                                Вторник
-                            </div>
-                            <div class="my-day__note">
-                                17 сентября
-                            </div>
-                            <div class="my-day__section">
-                                <a class="my-day__item" href="#">
-                                    <div class="my-day__border" style="background-color: var(--math);"></div>
-                                    <div class="my-day__label">
-                                        Посмотреть “Как обучаться на платформе”
-                                    </div>
-                                    <span class="my-day__time">
-                                        12:10
-                                    </span>
-                                </a>
-                                <a class="my-day__item" href="#">
-                                    <div class="my-day__border" style="background-color: var(--math);"></div>
-                                    <div class="my-day__label">
-                                        Посмотреть “Стратегия обучения”
-                                    </div>
-                                    <span class="my-day__time">
-                                        07:20
-                                    </span>
+                        <div class="dashboard__sidebar">
+                            <h2 class="dashboard__sub-heading title title--h5">
+                                Задачи на&nbsp;сегодня
+                            </h2>
+                            <div class="dashboard__card course-card">
+                                <div class="course-card__prefix caption">
+                                    Онлайн-занятие через 03:59
+                                </div>
+                                <div class="course-card__heading headline headline--2">
+                                    Планиметрия. Часть 1.
+                                </div>
+                                <a class="course-card__more button button--larger button--transparent" href="#">
+                                    Войти в класс
                                 </a>
                             </div>
-                            <div class="my-day__section">
-                                <a class="my-day__item" href="#">
-                                    <div class="my-day__border" style="background-color: var(--russian);"></div>
-                                    <div class="my-day__label">
-                                        Пройти урок “Лексическое значение слова”
-                                    </div>
-                                    <span class="my-day__time">
-                                        12:02
-                                    </span>
-                                </a>
-                                <a class="my-day__item" href="#">
-                                    <div class="my-day__border" style="background-color: var(--russian);"></div>
-                                    <div class="my-day__label">
-                                        Пройти урок “Синонимы”
-                                    </div>
-                                    <span class="my-day__time">
-                                        07:20
-                                    </span>
-                                </a>
-                                <a class="my-day__item" href="#">
-                                    <div class="my-day__border" style="background-color: var(--russian);"></div>
-                                    <div class="my-day__label">
-                                        Решить 6 задач в тренажере задач по “Лексика и Фразеология”
-                                    </div>
-                                    <span class="my-day__time">
-                                        1/6
-                                    </span>
-                                </a>
+                            <div class="dashboard__calendar my-day">
+                                <div class="my-day__heading title title--h6">
+                                    Вторник
+                                </div>
+                                <div class="my-day__note">
+                                    17 сентября
+                                </div>
+                                <div class="my-day__section">
+                                    <a class="my-day__item" href="#">
+                                        <div class="my-day__border" style="background-color: var(--math);"></div>
+                                        <div class="my-day__label">
+                                            Посмотреть “Как обучаться на платформе”
+                                        </div>
+                                        <span class="my-day__time">
+                                            12:10
+                                        </span>
+                                    </a>
+                                    <a class="my-day__item" href="#">
+                                        <div class="my-day__border" style="background-color: var(--math);"></div>
+                                        <div class="my-day__label">
+                                            Посмотреть “Стратегия обучения”
+                                        </div>
+                                        <span class="my-day__time">
+                                            07:20
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="my-day__section">
+                                    <a class="my-day__item" href="#">
+                                        <div class="my-day__border" style="background-color: var(--russian);"></div>
+                                        <div class="my-day__label">
+                                            Пройти урок “Лексическое значение слова”
+                                        </div>
+                                        <span class="my-day__time">
+                                            12:02
+                                        </span>
+                                    </a>
+                                    <a class="my-day__item" href="#">
+                                        <div class="my-day__border" style="background-color: var(--russian);"></div>
+                                        <div class="my-day__label">
+                                            Пройти урок “Синонимы”
+                                        </div>
+                                        <span class="my-day__time">
+                                            07:20
+                                        </span>
+                                    </a>
+                                    <a class="my-day__item" href="#">
+                                        <div class="my-day__border" style="background-color: var(--russian);"></div>
+                                        <div class="my-day__label">
+                                            Решить 6 задач в тренажере задач по “Лексика и Фразеология”
+                                        </div>
+                                        <span class="my-day__time">
+                                            1/6
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,14 +322,15 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-        <script src="../scripts/_global.js?1657473385"></script>
-        <script src="../scripts/_mfp.js?1657473385"></script>
-        <script src="../scripts/_scrollbar.js?1657473385"></script>
-        <script src="../scripts/_room.js?1657473385"></script>
-        <script src="../scripts/_mobile-collapse.js?1657473385"></script>
-        <script src="../scripts/_accordion.js?1657473385"></script>
-        <script src="../scripts/_schedule.js?1657473385"></script>
-        <script src="../scripts/_dropdown.js?1657473385"></script>
+        <script src="../scripts/_global.js?1661167040"></script>
+        <script src="../scripts/_mfp.js?1661167040"></script>
+        <script src="../scripts/_scrollbar.js?1661167040"></script>
+        <script src="../scripts/_room.js?1661167040"></script>
+        <script src="../scripts/_mobile-collapse.js?1661167040"></script>
+        <script src="../scripts/_accordion.js?1661167040"></script>
+        <script src="../scripts/_schedule.js?1661167040"></script>
+        <script src="../scripts/_dropdown.js?1661167040"></script>
+        <script src="../scripts/_header.js?1661167040"></script>
 
     </body>
 </html>
