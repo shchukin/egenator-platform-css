@@ -9,7 +9,7 @@
 }
 
     .card__heading {
-        min-height: calc(2*var(--headline-2-line));
+        min-height: calc(2 * var(--headline-2-line));
     }
 
     .card__footer {

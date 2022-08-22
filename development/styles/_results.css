@@ -34,7 +34,7 @@
 
         .results__link--current,
         .results__link--current:hover,
-        .results__link--current:after {
+        .results__link--current:active {
             color: var(--black);
             cursor: default;
         }
@@ -88,7 +88,7 @@
 
             .results__link--current,
             .results__link--current:hover,
-            .results__link--current:after {
+            .results__link--current:active {
                 /*color: var(--black);*/
                 /*cursor: default;*/
             }
@@ -100,7 +100,6 @@
 
         .results__data {
             /*margin-top: 30px;*/
-
         }
 }
 

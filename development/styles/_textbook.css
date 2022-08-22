@@ -21,6 +21,7 @@
         grid-template-columns: 860fr 307fr;
         grid-gap: 32px;
     }
+
         @media (min-width: 1240px) {
             .textbook__body {
                 grid-template-columns: 860px 307px;

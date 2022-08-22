@@ -6,7 +6,7 @@
         position: relative;
         display: block;
         min-height: 300px;
-        padding: 24px 24px 88px 24px;
+        padding: 24px 24px 88px;
         text-decoration: none;
         color: inherit;
         box-shadow: inset 0 0 0 1px var(--black);

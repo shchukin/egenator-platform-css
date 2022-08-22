@@ -216,7 +216,7 @@
     }
     .report tbody td {
         font-size: var(--body1-font);
-        line-height: var(--body1-line)
+        line-height: var(--body1-line);
     }
 }
 

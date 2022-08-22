@@ -60,7 +60,7 @@
     .wysiwyg--halfen blockquote,
     .wysiwyg--halfen .video {
         margin-top: calc(var(--body2-line-mobile) / 2);
-        margin-bottom: calc(var(--body2-line-mobile) /2);
+        margin-bottom: calc(var(--body2-line-mobile) / 2);
     }
 }
 /* stylelint-enable */
