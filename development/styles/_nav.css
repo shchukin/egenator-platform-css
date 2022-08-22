@@ -67,6 +67,7 @@
 
         .nav__close {
             position: absolute;
+            z-index: 1500;
             right: 0;
             top: 0;
             display: block;
