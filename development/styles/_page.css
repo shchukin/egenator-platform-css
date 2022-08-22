@@ -12,4 +12,8 @@
     .user-expanded .page {
         display: none;
     }
+
+    .nav-expanded .page {
+        display: none;
+    }
 }

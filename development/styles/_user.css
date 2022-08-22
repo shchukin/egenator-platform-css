@@ -39,6 +39,10 @@
             background-color: var(--black-background-hover);
         }
 
+        .user__link--current {
+            color: #FAD03D;
+        }
+
 
 @media (max-width: 639px) {
 

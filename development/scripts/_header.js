@@ -47,4 +47,28 @@
     });
 
 
+
+    /* Nav */
+
+    $('.header__burger').on('click', function () {
+        $('html').toggleClass('nav-expanded');
+    });
+
+    $('.nav__close').on('click', function () {
+        $('html').removeClass('nav-expanded');
+    });
+
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.header__burger, .nav').length) {
+            $('html').removeClass('nav-expanded');
+        }
+    });
+
+    $(document).on('keyup', function (event) {
+        if (event.keyCode === 27) {
+            $('html').removeClass('nav-expanded');
+        }
+    });
+
+
 })(jQuery);

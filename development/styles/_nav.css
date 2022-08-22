@@ -1,0 +1,87 @@
+.nav {
+    position: absolute;
+    z-index: 3000;
+    left: 50%;
+    transform: translateX(-50%  );
+    margin: auto;
+    top: 0;
+}
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-auto-flow: column;
+    }
+        .nav__link {
+            position: relative;
+            display: block;
+            padding: 24px;
+            font-size: var(--body2-font);
+            line-height: var(--body2-line);
+            color: #FFFFFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+            .nav__link::before {
+                content: "";
+                position: absolute;
+                left: 2px;
+                right: 2px;
+                top: 12px;
+                bottom: 12px;
+                border-radius: 8px;
+            }
+
+            .nav__link:hover::before {
+                background-color: var(--black-background-hover);
+            }
+
+        .nav__link--current {
+            color: #FAD03D;
+        }
+
+
+@media (max-width: 639px) {
+
+
+    /* Красим всю страницу когда открыт юзер, ведь меню не на всю высоту */
+    .nav-expanded {
+        background-color: var(--black);
+    }
+
+    .nav {
+        position: relative;
+        padding-top: 11px;
+        padding-bottom: 24px;
+        box-shadow: inset 0 1px 0 var(--white-16pct);
+        display: none;
+    }
+
+    .nav-expanded .nav {
+        display: block;
+    }
+
+        .nav__close {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .nav__list {
+            display: block;
+        }
+            .nav__link {
+                padding: 19px 60px;
+                font-size: var(--headline-2-font);
+                line-height: var(--headline-2-line);
+            }
+                .nav__link::before {
+                    display: none;
+                }
+
+            .nav__link:hover {
+                background-color: transparent;
+            }
+}
