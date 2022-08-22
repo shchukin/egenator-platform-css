@@ -1,6 +1,6 @@
 {
-  "name": "template",
-  "dependencies": {
+  "name": "egenator-css",
+  "devDependencies": {
     "del": "2.2.0",
     "gulp": "4.0.2",
     "gulp-base64": "0.1.3",
@@ -9,17 +9,11 @@
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.1.0",
     "gulp-size": "2.1.0",
-    "gulp-stylelint": "3.9.0",
+    "gulp-stylelint": "13.0.0",
     "gulp-svgmin": "1.2.2",
     "gulp-svgstore": "6.0.0",
-    "postcss-cssnext": "2.8.0",
+    "postcss-cssnext": "3.1.1",
     "postcss-sprites": "3.1.2",
     "gulp4-run-sequence": "^1.0.0"
-  },
-  "scripts": {
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
   }
 }
