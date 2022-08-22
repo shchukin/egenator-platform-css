@@ -1,4 +1,5 @@
 body {
+    position: relative; /* .nav позиционируется сюда через position: absolute (смотри на небольших ширина типа 800px) */
     min-width: 1160px;
     margin: 0;
     height: 100%;
