@@ -27,7 +27,7 @@
                 <a class="header__logo" href="#">
                     <img class="header__emblem" src="../symbols/logo.svg" width="138" height="26" alt="">
                 </a>
-                <button class="header__profile" type="button">
+                <button class="header__user" type="button">
                     <svg class="header__progress round-loading" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle stroke="rgba(255, 255, 255, 0.16)" stroke-width="1" cx="28" cy="28" r="22"></circle>
                         <circle stroke-dashoffset="115.4535" stroke-dasharray="153.9380" stroke="#A8D741" stroke-width="3" cx="28" cy="28" r="24.5" transform="rotate(-90)" transform-origin="28 28"></circle>
@@ -55,10 +55,17 @@
 
         </nav>
 
-
-        <nav>
-
-        </nav>
+        <div class="user">
+            <button class="user__close close-in-header" type="button">
+                <img class="close-in-header__cross" src="../symbols/close.svg" width="24" height="24" alt="">
+            </button>
+            <nav class="user__close__list">
+                <a class="user__link headline headline--1" href="#">Профиль</a>
+                <a class="user__link headline headline--1" href="#">Мой прогресс</a>
+                <a class="user__link headline headline--1" href="#">Настройки</a>
+                <a class="user__link headline headline--1" href="#">Платежи</a>
+            </nav>
+        </div>
 
         <div class="notifications">
             <div class="notifications__head">

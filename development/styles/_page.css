@@ -8,4 +8,8 @@
     .notifications-expanded .page {
         display: none;
     }
+
+    .user-expanded .page {
+        display: none;
+    }
 }

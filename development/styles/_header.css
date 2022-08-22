@@ -40,7 +40,7 @@
                 fill: #F9F9F9;
             }
 
-        .header__profile {
+        .header__user {
             position: absolute;
             right: 93px;
             top: 0;
@@ -55,7 +55,7 @@
             cursor: pointer;
         }
 
-        .header__profile::before {
+        .header__user::before {
             content: "";
             position: absolute;
             left: 0;
@@ -65,7 +65,7 @@
             border-radius: 8px;
         }
 
-        .header__profile:hover::before {
+        .header__user:hover::before {
             background-color: var(--black-background-hover);
         }
             .header__progress {
@@ -261,7 +261,7 @@
                     /*fill: #F9F9F9;*/
                 }
 
-            .header__profile {
+            .header__user {
                 /*position: absolute;*/
                 right: 82px;
                 /*top: 0;*/
@@ -278,7 +278,7 @@
                 /*cursor: pointer;*/
             }
 
-            .header__profile::before {
+            .header__user::before {
                 display: none;
                 /*content: "";*/
                 /*position: absolute;*/
@@ -289,7 +289,7 @@
                 /*border-radius: 8px;*/
             }
 
-            .header__profile:hover::before {
+            .header__user:hover::before {
                 /*background-color: var(--black-background-hover);*/
             }
                 .header__progress {

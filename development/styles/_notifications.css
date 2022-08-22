@@ -80,6 +80,11 @@
 
 @media (max-width: 639px) {
 
+    /* Красим всю страницу когда внутри открыто несколько уведомлений */
+    .notifications-expanded {
+        background-color: var(--black);
+    }
+
     .notifications {
         position: static;
         padding-top: var(--header-height);
@@ -94,10 +99,6 @@
         border-radius: 0;
         width: auto;
         /*display: none;*/
-    }
-
-    .notifications-expanded {
-        background-color: var(--black);
     }
 
     .notifications-expanded .notifications {

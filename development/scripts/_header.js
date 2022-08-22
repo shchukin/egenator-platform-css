@@ -23,4 +23,28 @@
     });
 
 
+
+    /* User */
+
+    $('.header__user').on('click', function () {
+        $('html').toggleClass('user-expanded');
+    });
+
+    $('.user__close').on('click', function () {
+        $('html').removeClass('user-expanded');
+    });
+
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.header__user, .user').length) {
+            $('html').removeClass('user-expanded');
+        }
+    });
+
+    $(document).on('keyup', function (event) {
+        if (event.keyCode === 27) {
+            $('html').removeClass('user-expanded');
+        }
+    });
+
+
 })(jQuery);
