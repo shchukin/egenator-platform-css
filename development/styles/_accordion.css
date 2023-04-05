@@ -176,17 +176,17 @@
 
 @media (min-width: 640px) {
 
-    .accordion {
+    .accordion--vertical {
 
     }
-        .accordion__handler {
+        .accordion--vertical .accordion__handler {
 
         }
 
-        .accordion__list {
+        .accordion--vertical .accordion__list {
             display: block;
         }
-            .accordion__link {
+            .accordion--vertical .accordion__link {
                 display: block;
                 border-bottom: 1px solid var(--black-8pct);
                 text-align: left;
@@ -195,14 +195,14 @@
                 line-height: 28px;
             }
 
-            .accordion__link:last-child {
+            .accordion--vertical .accordion__link:last-child {
 
             }
-                .accordion__link::after {
+                .accordion--vertical .accordion__link::after {
                     display: none;
                 }
 
-            .accordion__link--current {
+            .accordion--vertical .accordion__link--current {
                 border-bottom-color: var(--black);
             }
 }
