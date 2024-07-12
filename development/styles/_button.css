@@ -8,7 +8,7 @@
     background-color: var(--black);
     border-radius: 6px;
     font-family: var(--font-heading);
-    font-weight: 800;
+    font-weight: var(--ultrabold);
     font-size: var(--body2-font);
     line-height: var(--body2-line);
     color: #F9F9F9;
